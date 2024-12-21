@@ -1,0 +1,119 @@
+
+.video-gallery {
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+  
+  .video-gallery h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5); /* Màu nền đen mờ */
+    backdrop-filter: blur(30px); /* Hiệu ứng mờ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .iframe-container iframe {
+    position: relative;
+    z-index: 5; /* Đảm bảo iframe nằm trên nền */
+  }
+  .video-card {
+    background-color: #fff;
+    border: 1px solid #edf2f9;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .video-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-thumbnail {
+    position: relative;
+  }
+  
+  .video-thumbnail img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+    opacity: 0.8;
+  }
+  
+  .video-info {
+    padding: 10px;
+  }
+  
+  .video-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 10px 0 5px 0;
+  }
+  
+  .video-info p {
+    color: #6c757d;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .video-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .video-info a:hover {
+    text-decoration: underline;
+  }
+  
+
+  .movie-item {
+    position: relative;
+    overflow: hidden; /* Giới hạn icon trong phần tử */
+  }
+  
+  .movie-item img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .movie-item .video-icon {
+    display: block;
+    position: absolute;
+    top: 30%; /* Đẩy icon lên phía trên */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px; /* Kích thước icon lớn hơn */
+    color: rgba(255, 255, 255, 0.9); /* Màu sắc icon trắng */
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Tạo bóng để icon rõ ràng hơn */
+    pointer-events: none;
+    cursor: pointer;
+  }
+  @media (max-width:1200px) {
+    .movie-item .video-icon{
+      display: block !important;
+    }
+  }

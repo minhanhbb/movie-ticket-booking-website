@@ -1,0 +1,198 @@
+/* QuanLyVe.css */
+
+.ung-dung-ve {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fb;
+    padding: 30px 20px;
+  }
+  
+  .khung-noi-dung {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lich-su-ve h3 {
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .quan-ly-ve {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .bo-loc-ve {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .bo-loc-ve select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #555;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bo-loc-ve select:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .danh-sach-ve {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+  
+  .ve-item {
+    width: 220px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ve-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .ve-item.dang-chon-ve {
+    border: 2px solid #4e73df;
+    box-shadow: 0 4px 12px rgba(78, 115, 223, 0.2);
+  }
+  
+  .hinh-ve {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .hinh-ve:hover {
+    opacity: 0.85;
+  }
+  
+  .ten-phim {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  
+  .rap-chieu,
+  .ngay-chieu,
+  .trang-thai-ve {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 8px;
+  }
+  
+  .trang-thai-ve.da-thanh-toan-ve {
+    color: #28a745;
+    font-weight: 500;
+  }
+  
+  .trang-thai-ve.chua-thanh-toan-ve {
+    color: #dc3545;
+    font-weight: 500;
+  }
+
+/* Tăng kích thước của Modal */
+.ant-modal {
+  
+    width: 1000px; /* Đặt chiều rộng tối đa cho modal */
+    border-radius: 8px; /* Bo góc modal */
+  }
+  
+  /* Cải thiện giao diện của nội dung trong modal */
+  .ant-modal .contentt {
+    background-color: #e6eeee;
+    padding: 30px;
+    display: flex;
+    gap:30px; /* Khoảng cách giữa ảnh và thông tin */
+   
+  }
+  
+  .ant-modal .contentt img {
+   width: 200px; /* Giảm kích thước hình ảnh cho phù hợp */
+    border-radius: 8px;
+  }
+  
+  .ant-modal .info {
+  
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .ant-modal .info p {
+    font-size: 16px;
+    color: #333; /* Đảm bảo văn bản dễ đọc */
+    margin: 10px 0;
+  }
+  
+  /* Cải thiện thiết kế phần QR Code */
+  .ant-modal .qr-code-container {
+margin-left: 140px;
+    margin-top: 20px;
+  }
+  
+  .ant-modal .qr-code-container img {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+  }
+  
+
+
+
+  @media (max-width: 768px) {
+    .bo-loc-ve {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .danh-sach-ve {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .ve-item {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .lich-su-ve h3 {
+      font-size: 22px;
+    }
+  
+    .ve-item {
+      padding: 12px;
+    }
+  
+    .hinh-ve {
+      height: 130px;
+    }
+  }
+  

@@ -1,0 +1,639 @@
+.movie-detail-container {
+    width: 100%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Bố cục phần thông tin và hình ảnh */
+.boxbig {
+    position: relative; /* Đặt relative để lớp phủ có thể căn chỉnh chính xác */
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.boxbig::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Lớp phủ màu đen với độ mờ 50% */
+    z-index: 1; /* Đảm bảo lớp phủ nằm trên background */
+}
+
+.info-section {
+    position: relative;
+    z-index: 2; /* Đảm bảo nội dung nằm trên lớp phủ */
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    width: calc(100% - 340px);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+.info-section {
+    display: flex;
+    align-items: center; /* Sửa từ flex-start thành center */
+    gap: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    width: calc(100% - 340px);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.poster {
+    width: 230px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.movie-details-wrapper {
+    display: flex;
+    justify-content: space-between; /* Đảm bảo phần diễn viên, đạo diễn ở bên phải */
+    gap: 20px;
+    color: #fff;
+    width: 100%;
+}
+
+.movie-info-1 {
+    flex: 1;
+}
+.movie-info-1 h2{
+    color: #fff;
+   
+}
+.title {
+    text-align: left !important;
+    padding-bottom: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ .buy a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 600;
+ }
+.genre {
+    font-size: 14px;
+    padding-bottom: 15px !important;
+    padding-top: 0px !important;
+    color: #d3d3d3;
+}
+.actions-1{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+.buy-ticket-button {
+    padding: 8px 20px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.movie-details {
+    display: flex;
+    gap: 40px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Thông tin diễn viên, đạo diễn, nhà sản xuất */
+.additional-info {
+    width: 230px; /* Đặt width cho phần này */
+    font-size: 14px;
+    line-height: 1.5;
+    padding-top: 70px;
+
+}
+.additional-info p{
+    color: rgb(225, 21, 21);
+}
+/* Tabs */
+.tabs {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    border-bottom: 2px solid #ddd;
+    padding-left: 190px;
+    margin: 30px auto 0;
+}
+
+.tab {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #666;
+    text-decoration: none; /* Bỏ gạch chân cho thẻ a */
+}
+
+.tab.active {
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+}
+
+.tab:hover {
+    color: #3498db;
+}
+
+
+/* Phần chọn video */
+.video-section {
+    margin-top: 20px;
+    width: calc(100% - 340px); /* Giảm chiều rộng */
+    margin: 20px auto; /* Căn giữa */
+   
+}
+.content{
+    background: #edf2f9;
+   float: none;
+   padding-right: 261px;
+   margin-top: 0px;
+   margin-bottom:-30px;
+   padding-bottom: 30px;
+   padding-top: 20px;
+ 
+}
+.content-1{
+    display: block;
+  
+ 
+}
+
+
+/* Phần chọn lịch chiếu */
+.schedule-section {
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px; /* Thêm padding để cách lề */
+    gap: 10px;
+    width: 735px; /* Giảm chiều rộng */
+    margin-left: 170px; /* Căn giữa */
+}
+
+/* Điều chỉnh thẻ select */
+.city-select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 600px; /* Đặt chiều rộng của select là 460px */
+}
+.schedule-section h3{
+    font-weight:500;
+    font-size: 21px;
+}
+.schedule-section p{
+    color:#b7ccef ;
+}
+
+.schedule-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.xem-lich-chieu {
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: #0d1f33;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 250px; /* Đặt chiều rộng của button là 210px */
+}
+.xem-lich-chieu:hover{
+    background-color: black;
+}
+
+/* Phần bài viết liên quan */
+.related-posts {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+ margin-top: -7px;
+    margin-left: 170px;
+    width: 735px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   
+}
+
+.title-2 {
+  margin-top: 15px;
+  background-color: #dfe8f3;
+  width: 735px;
+  height: 65px;
+  border-radius:10px;
+  margin-left: 170px;
+  margin-bottom: 0;
+}
+.title-2 h3{
+    padding-left: 30px;
+    font-size: 15px;
+    padding-top: 18px;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.post:last-child {
+    border-bottom: none; /* Bỏ kẻ dưới cho bài viết cuối */
+}
+
+.post-image {
+    width: 250px; /* Thay đổi chiều rộng của ảnh */
+    height: 140px; /* Thay đổi chiều cao của ảnh */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px; /* Tăng khoảng cách giữa ảnh và nội dung */
+}
+
+.post-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333 !important;
+    text-decoration: none;
+}
+
+
+
+.post-meta {
+    font-size: 13px;
+    color: #888;
+}
+.post-meta-2{
+    font-size: 13px;
+    font-weight:500;
+    color:#3d4047 !important ;
+}
+
+  
+  /* Phần cộng đồng */
+  .congdong{
+    text-align: center;
+  }
+  .community-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 170px;
+    margin-bottom: 30px;
+    width: 735px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .community-section h3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight:500;
+    color: black;
+    padding: 10px; /* Thêm padding để tạo không gian */
+        background-color: #dfe8f3; /* Màu nền cho tiêu đề */
+        border: 1px solid #b0bec5; /* Đường viền xung quanh */
+    border-radius: 5px; /* Bo góc cho đường viền */
+    text-align: center;
+  }
+  
+  .comment {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tạo bóng cho comment */
+    margin-bottom: 15px;
+  }
+  
+  .comment-user {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .comment-rating {
+    font-size: 14px;
+    color: #f5c518; /* Màu vàng cho rating */
+  }
+  
+  .comment-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .comment-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .comment-actions button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .comment-actions button:hover {
+    color: #3498db;
+  }
+  
+  .like-btn:hover,
+  .dislike-btn:hover {
+    opacity: 0.7;
+  }
+  .danhgiaphim{
+    display: flex;
+  }
+.imgphim{
+  margin-right: 20px;
+}
+.rating{
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+.ngoisao{
+    margin-top:6px;
+} 
+.city-select{
+    display: block;
+}
+
+.btn-outline-danger,.btn-outline-warning{
+    background: #fff;
+    color: gray;
+    border: none;
+}
+.btn-outline-primary{
+    background: #333;
+    color: #fff;
+    border: none;
+}
+.btn-outline-success{
+    background: #ff4d4f;
+    color: #fff;
+    border: none;
+}
+@media (max-width:480px) {
+   
+     
+    .movie-info-1 h2 {
+        margin-right: 190px;
+    }
+    
+    .actions  {
+         gap :5px;
+        font-size: 15px;
+         
+    }
+    .muave {
+       font-size: 10px;
+
+    }
+   
+
+  
+    
+}
+
+  
+  .imgphim {
+    flex: 0 0 120px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .imgphim img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .noidungdanhgia {
+    flex: 1;
+  }
+  
+  .noidungdanhgia p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .rating {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .rating svg {
+    transition: transform 0.2s ease;
+  }
+  
+  .rating svg:hover {
+    transform: scale(1.2);
+  }
+  
+  textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    resize: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  /* Cho màn hình máy tính bảng */
+@media (min-width: 767px) and (max-width: 1024px) {
+    .movie-detail-container {
+        padding: 20px;
+    }
+
+    .info-section {
+        overflow-x: hidden;
+        width: 100%;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .movie-details-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .poster {
+        width: 180px;
+    }
+
+    .additional-info {
+        width: 100%;
+        padding-top: 20px;
+    }
+   
+    .tabs {
+   
+        gap: 10px;
+        padding-left: 100px;
+        margin-left: 0;
+    }
+
+    .schedule-section, .related-posts, .title-2, .community-section {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .video-section {
+        width: 100%;
+    }
+  
+}
+
+
+
+
+  @media screen and (max-width: 768px) {
+    .info-section {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        padding: 15px;
+    }
+.info-section img{
+    display: none;
+}
+    .movie-details-wrapper {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .poster {
+        width: 150px;
+    }
+
+    .additional-info {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .tabs {
+        gap: 0px;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .actions {
+        display: flex;
+        flex-direction: row !important; /* Ghi đè bất kỳ nơi nào có 'flex-direction: column' */
+        justify-content: space-between;
+      }
+    .movie-details {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .schedule-section, .related-posts, .title-2, .community-section {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .video-section {
+        width: 100%;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap; /* Cho phép các nút xuống dòng khi cần thiết */
+      gap: 10px; /* Khoảng cách giữa các nút */
+    }
+  
+    .actions button {
+      flex: 1 1 45%; /* Mỗi nút chiếm khoảng 45% chiều rộng của container, giúp 2 nút ở mỗi dòng */
+      padding: 12px; /* Đảm bảo nút có kích thước vừa đủ */
+      font-size: 14px; /* Kích thước chữ */
+      text-align: center; /* Căn giữa chữ trong nút */
+    }
+  
+    .actions .buy-ticket {
+      background-color: #ff4d4f; /* Màu đỏ cho nút "Mua vé" */
+      color: white;
+    }
+    .button.buy{
+    width: 130px !important;
+    }
+    .button.like {
+     width: 130px !important;
+     padding-left: 40px;
+    }
+    .button.rate{
+        width:130px !important;
+      padding-bottom: 8px;
+    }
+    .button.trailer{
+        width: 130px !important;
+    }
+  }
+  @media (max-width:768px) {
+    .content{
+        padding-left: 145px;
+    }
+    .community-section{
+        margin-left: 180px !important;
+    }
+    .row-custom select {
+        width: 540px !important;
+    }
+  }
+  @media (max-width:580px) {
+    .content{
+        padding-left: 0;
+    }
+    .community-section{
+       margin-left: 5px !important;
+    }
+  }

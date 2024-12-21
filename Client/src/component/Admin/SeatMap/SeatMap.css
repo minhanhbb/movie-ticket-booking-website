@@ -1,0 +1,47 @@
+.custom-seat-matrix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-seat-row {
+  display: flex;
+  align-items: center;
+}
+
+.custom-seat-row-label {
+  display: inline-block;
+  width: 37px; /* Chiều rộng chữ cái */
+  text-align: center;
+  font-weight: bold;
+  margin-right: 8px; /* Khoảng cách giữa chữ cái và ghế */
+}
+
+.custom-seat-row-buttons {
+  margin-left: 12px;
+}
+
+.custom-seat {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.custom-occupied {
+  background-color: red;
+}
+
+.custom-regular {
+  background-color: #f0f0f0;
+}
+
+.custom-vip {
+  background-color: #ffd700;
+}
+
+.custom-couple {
+  background-color: #ff69b4;
+}

@@ -1,0 +1,47 @@
+.transaction-table-container {
+    width: 70%;
+    margin-right: 240px;
+  }
+  
+  .transaction-table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  .transaction-table th,
+  .transaction-table td {
+    padding: 15px;
+    text-align: left;
+    color: #5f7d95;
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 1px solid #e8edf3;
+  }
+  
+  .transaction-table th {
+    text-transform: uppercase;
+  }
+  
+  .transaction-table .no-transaction {
+    text-align: center;
+    padding: 20px;
+    color: #5f7d95;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .transaction-table tr:last-child td {
+    border-bottom: none;
+  }
+  .divider {
+    border-bottom: 1px solid #cdc5c5; /* Màu và độ dày của đường kẻ */
+   top:70px;
+    width: 100%; /* Độ rộng của đường kẻ */
+    position: relative;
+   left: 80px;
+  }
+  .account-nav-item.active .account-nav-title {
+    color: #007bff;
+    font-weight: bold;
+}

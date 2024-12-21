@@ -1,0 +1,658 @@
+.div-content{
+  background: #f3f6fb;
+  margin-top: -13px;
+  overflow-x: hidden;
+
+}
+.div-content .container {
+  display: flex !important;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 10px;
+}
+.seat{
+  margin-left: 10px;
+}
+.locations, .cinemas, .showtimes {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.locations {
+  width: 20%;
+  margin: 0;
+  padding: 0;
+}
+
+.cinemas {
+  width: 25%;
+  padding: 0; 
+}
+
+.showtimes {
+  width: 55%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+li.selected {
+  color: #007bff;
+ 
+}
+
+
+ul.cinema-list {
+  list-style-type: none;
+  padding: 0; 
+  margin: 0; 
+  margin-top: -19px;
+  text-align: left;
+}
+
+ul.cinema-list li {
+  border: 1px solid #E3EBF6;
+  padding: 10px;
+  margin-bottom: -1px; 
+  background-color: #fff; 
+  cursor: pointer; 
+  font-family: "Cerebri Sans";
+  transition: background-color 0.3s ease;
+}
+
+
+ul.cinema-list li.selected {
+  background-color: #00aaff;
+  color: #fff;
+}
+
+
+ul.cinema-list li:last-child {
+  margin-bottom: 0;
+}
+
+.date-selection {
+
+  background-color: #D9D9D9;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  
+ 
+}
+
+.date-selection span {
+  padding: 10px;
+  padding-right: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  
+}
+
+.date-selection span p {
+  color: #95AACC;
+  margin: 0; 
+  padding-left: 10px;
+}
+
+.date-selection .selected {
+  background-color: #C7D6EC;
+  color: #fff;
+}
+
+.khuvuc {
+  width: 100%;
+  height: 50px;
+  background-color: #EDF2F9;
+  margin-top: 0;
+  padding-top: 6px;
+  font-size: 17px;
+  font-family: "Cerebri Sans, sans-serif";
+  color: #adc6e6;
+  font-weight: 500;
+}
+
+.no-showtimes {
+margin-top: 15px;
+  width: 100%;
+  height: 40px;
+  padding: 2px;
+  background-color: #ffeb3b;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.no-showtimes p{
+ margin-top: 10px;
+}
+.movies {
+  margin-top: 20px;
+  font-family: "Cerebri Sans";
+}
+.titles{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center !important;
+  padding-top: 15px;
+  font-size: 22px;
+  font-weight :500;
+}
+
+.movie {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+.movie .details {
+  flex: 1;
+ 
+  text-align: left;
+}
+
+.movie h4 {
+  margin-top: 0;
+}
+
+.showtimes-list button {
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #007bff;
+}
+
+.showtimes-list button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.list-tp {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+  margin-top: -19px;
+  text-align: left;
+  color: #6E84A3;
+}
+
+.list-tp li {
+  border: 1px solid #E3EBF6; 
+  padding: 10px;
+  margin-bottom: -1px; 
+  background-color: #fff; /* Màu nền cho phần tử */
+  cursor: pointer; /* Con trỏ khi di chuột qua phần tử */
+font-family: "Cerebri Sans";
+  transition: background-color 0.3s ease;
+}
+
+.list-tp li.city {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* CSS cho thành phố được chọn */
+li.city.selected {
+  background-color: #00aaff;
+  color: #fff;
+}
+
+/* Tùy chọn: loại bỏ viền dưới cùng của phần tử cuối cùng */
+.list-tp li:last-child {
+  margin-bottom: 0;
+}
+.showtimes{
+  margin: 0;
+  padding: 0;
+}
+.date-selection{
+ width: 100%;
+ font-family: 'Cerebri Sans';
+ height: 50px;
+ line-height: 13px;
+ 
+}
+
+
+
+.movie img {
+width: 80px;
+height: 120px;
+border-radius: 5px;
+object-fit: cover;
+margin-right: 30px;
+margin-left: 15px;
+}
+
+.details {
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+
+.details h4 {
+margin: 0;
+font-size: 18px;
+font-weight: 600;
+color: #333;
+}
+
+.details p {
+margin: 0;
+font-size: 14px;
+color: #666;
+}
+
+.showtimes-list {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+margin-top: 10px;
+
+}
+.showtimes-list p{
+  font-size: 12px;
+
+}
+
+.showtimes-list button {
+padding: 8px 12px;
+border: 1px solid #d1d1d1;
+background-color: #f5f5f5;
+border-radius: 5px;
+cursor: pointer;
+font-size: 14px;
+color: #333;
+transition: background-color 0.2s ease;
+width: 70px;
+height: 50px;
+
+
+}
+
+.showtimes-list button:hover {
+background-color: #d1d1d1;
+}
+
+.showtimes-list button.selected {
+background-color: #ffffff;
+border-color: #333;
+color: #333;
+}
+
+.showtimes-list button.selected:hover {
+background-color: #f0f0f0;
+}
+.list-tp li.cinema {
+  border: 1px solid #E3EBF6;
+  padding: 10px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li.cinema.selected {
+  background-color: #00aaff; /* Màu nền khi được chọn */
+  color: #fff; /* Màu chữ khi được chọn */
+}
+
+/* Để đảm bảo viền dưới không bị mất với mục cuối cùng */
+.list-tp li.cinema:last-child {
+  margin-bottom: 0;
+}
+.list-tp li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px solid #E3EBF6;
+  margin-bottom: -1px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+li.city.selected {
+  background-color: #00aaff;
+  color: #fff;
+}
+
+.cinema-count {
+  background-color: #007bff;
+  padding-top: 2px;
+  text-align: center;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  
+}
+/* CSS hiện tại của bạn */
+.calendar-custom-1{
+  border-bottom: 1px solid #c6d7ee;
+}
+/* Media queries cho các thiết bị nhỏ hơn */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* Chuyển đổi thành cột */
+  }
+
+  .locations, .cinemas, .showtimes {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    padding: 10px; /* Giảm padding */
+    margin: 0; /* Xóa margin */
+  }
+
+  .locations {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+  }
+
+  .cinemas {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    margin-top: 10px; /* Thêm khoảng cách giữa các phần */
+  }
+
+  .showtimes {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    margin-top: 10px; /* Thêm khoảng cách giữa các phần */
+  }
+
+  .movie {
+    flex-direction: column; /* Xếp theo cột */
+    align-items: flex-start; /* Căn lề trái */
+    margin-bottom: 15px; /* Giảm khoảng cách giữa các phần tử */
+  }
+
+  .movie img {
+    width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng */
+    height: auto; /* Tự động điều chỉnh chiều cao */
+    margin-right: 0; /* Xóa margin bên phải */
+    margin-left: 0; /* Xóa margin bên trái */
+  }
+
+  .details {
+    text-align: left; /* Căn lề trái */
+    padding: 10px 0; /* Thêm padding */
+  }
+
+  .date-selection {
+    flex-direction: column; /* Chuyển đổi thành cột */
+    margin-bottom: 10px; /* Thêm khoảng cách giữa các phần */
+  }
+
+  .date-selection span {
+    padding: 5px;
+    font-size: 12px; /* Giảm kích thước chữ */
+  }
+
+  .showtimes-list button {
+    padding: 8px 10px; /* Giảm kích thước padding */
+    font-size: 12px; /* Giảm kích thước chữ */
+  }
+
+  .no-showtimes {
+    height: auto; /* Cho phép chiều cao tự điều chỉnh */
+  }
+
+  .cinema-count {
+    font-size: 10px; /* Giảm kích thước chữ */
+    width: 15px; /* Giảm kích thước vòng tròn */
+    height: 15px; /* Giảm kích thước vòng tròn */
+  }
+}
+
+/* Media queries cho các thiết bị nhỏ hơn nữa */
+.city-selects{
+  display: none !important;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 10px; /* Giảm padding */
+  }
+  .list-tp .list{
+    display: none;
+  }
+  .city-selects{
+    display: block !important;
+    border: none !important;
+    margin-top: 20px;
+    width: 715px !important;
+    font-size: 14px;
+    padding: 8px;
+    background-size: 11px;
+    width: 717px !important ;
+    border: 1px solid gray  !important;
+   
+  }
+
+  .locations, .cinemas, .showtimes {
+    padding: 5px; /* Giảm padding thêm nữa */
+  }
+
+  .movie {
+    margin-bottom: 10px; /* Giảm khoảng cách giữa các phần tử */
+  }
+
+  .movie img {
+    width:80px;
+    height: 90px;
+    
+  }
+
+  .details {
+    padding: 5px 0; /* Giảm padding */
+  }
+
+  .date-selection {
+    display: flex;
+    flex-direction: row; /* Change to horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    align-items: center; /* Align items vertically centered */
+    gap: 10px; /* Add some space between items */
+    margin-bottom: 10px; /* Add space below the date selection */
+  }
+  
+  .date-selection span {
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #D9D9D9; /* Background color */
+  }
+  
+  .date-selection span p {
+    color: #95AACC;
+    margin: 0;
+    padding-left: 10px;
+  }
+  
+  .date-selection .selected {
+    background-color: #C7D6EC; /* Selected background color */
+    color: #fff; /* Selected text color */
+  }
+  
+  .showtimes-list button {
+    padding: 6px 8px; /* Giảm kích thước padding */
+    font-size: 10px; /* Giảm kích thước chữ */
+  }
+
+  .cinema-count {
+    font-size: 8px; /* Giảm kích thước chữ */
+    width: 12px; /* Giảm kích thước vòng tròn */
+    height: 12px; /* Giảm kích thước vòng tròn */
+  }
+  .date-custom-1 {
+    flex: 1 1 22%; /* Đối với các màn hình trung bình, mỗi ngày chiếm 22% chiều rộng, 4 ngày mỗi hàng */
+    padding: 8px;
+  }
+}
+
+@media(max-width:576px){
+  .date-custom-1{
+    font-size: 9px;
+  }
+  .calendar-custom-1{
+    width: 359px;
+  }
+  .list-tp .list{
+    display: none;
+  }
+  .city-selects{
+    display: block !important;
+    border: none !important;
+    margin-top: 20px;
+   width: 380px !important;
+     
+      
+    
+  }
+  .khuvuc{
+    height: 40px;
+  }
+.date-selection{
+gap: 0px;
+}
+.date{
+margin-right: 10px;
+position: relative;
+right: 15px;
+}
+.date-selection {
+  justify-content: center; /* Căn giữa các ngày trên màn hình nhỏ */
+}
+.date {
+  padding: 0px; /* Giảm khoảng cách bên trong */
+  margin: 0px; /* Giảm khoảng cách giữa các ngày để chúng sát nhau hơn */
+}
+@media (max-width:390px) {
+  .calendar-custom-1 {
+    width: 344px;
+}
+}
+}
+.titles{
+  text-align: center !important;
+}
+.calendar-custom-1 {
+  display: flex;
+
+ color: #edf2f9;
+  gap: 0;
+
+}
+
+.date-custom-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; /* Chia đều không gian */
+  padding: 5px; /* Tăng padding để cải thiện giao diện */
+  color: #555;
+  
+  cursor: pointer;
+  font-size: 12px ; /* Tăng kích thước chữ */
+
+}
+
+.date-custom-1.active {
+  background-color: #d4e3f4; /* Màu nền cho ngày đang chọn */
+  color: #0056b3; /* Màu chữ cho ngày đang chọn */
+}
+
+.date-custom-1:hover {
+  background-color: #b0d4ff; /* Màu nền khi hover */
+  color: #54585d; /* Màu chữ khi hover */
+}
+
+.date-custom-1 span {
+  font-weight: bold;
+  font-size: 15px !important; /* Tăng kích thước chữ cho ngày */
+  margin-bottom: 5px;
+  color: #95aac9;
+ 
+}
+
+.date-custom-1 small {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Điều chỉnh khoảng cách giữa các ô ngày */
+.calendar-custom .date-custom:not(:last-child) {
+  margin-right: 0; /* Không có khoảng cách giữa các ngày */
+}
+
+/* Điều chỉnh padding và khoảng cách tổng thể */
+.calendar-custom {
+  padding: 0;
+  gap: 0; /* Không có khoảng cách giữa các date-custom */
+}
+/* Overlay loading */
+.overlay-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff; /* Làm mờ nền */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Đảm bảo overlay ở trên cùng */
+}
+.city-selects {
+  width: 100%;
+
+  width: 716px ;
+  width: 384px ;
+
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140"><polygon points="70,105 105,35 35,35" fill="black"/></svg>')
+    no-repeat right 10px center;
+  background-size: 10px;
+}
+.no-showtime-message {
+  text-align: center; /* Canh giữa nội dung */
+  font-size: 16px; /* Kích thước chữ vừa phải */
+  font-weight: normal; /* Chữ không quá đậm */
+  color: #555; /* Màu xám tối cho chữ, dễ nhìn */
+  background-color: #f8f8f8; /* Màu nền nhẹ nhàng */
+  padding: 10px; /* Khoảng cách bên trong */
+  border-radius: 4px; /* Bo góc nhẹ */
+  margin-top: 20px; /* Tạo khoảng cách từ các phần khác */
+  border: 1px solid #ddd; /* Viền màu xám nhẹ */
+}
+
+

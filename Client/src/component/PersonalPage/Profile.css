@@ -1,0 +1,123 @@
+.content-acount {
+padding-bottom: 50px;
+}
+
+.profile-container {
+  position: relative;
+  max-width: 600px;
+  right: 220px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px !important ;
+ 
+}
+.xacthucsdt{
+  margin-top: 30px;
+}
+.profile-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex-basis: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width:1200px) {
+  .profile-container{
+    position: static;
+  }
+  
+}
+@media (max-width: 768px) {
+  .profile-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .content-acount {
+   height: 1100px;
+    }
+    
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.update-btn {
+  padding: 10px 20px;
+  background-color: #0a1f44;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+}
+.boxcha{
+  height: auto !important;
+}
+.label-form{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.label-form1{
+  margin-bottom: 20px;
+}
+.account-nav-title a{
+  text-decoration: none;
+  color: #333;
+}
+.account-nav{
+  margin-left: 90px;
+}
+.active-link {
+  font-weight: bold;
+  color: #4322ff; /* Example color */
+}
+@media (max-width:768px) {
+  .account-nav{
+    margin-left: 18px !important;
+  }
+  .account-nav-item{
+    right: -47px !important;
+  }
+}
+@media (max-width:580px) {
+ 
+  .account-nav-item{
+    right: -11px !important;
+    top: 31px;
+  }
+  .account-nav{
+    margin-left: -58px !important;
+ 
+  }
+ 
+}

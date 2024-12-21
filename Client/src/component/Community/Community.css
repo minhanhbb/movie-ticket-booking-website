@@ -1,0 +1,442 @@
+.trendingMovies {
+  text-align: center;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.xem-them {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.xem-them:hover {
+  background-color: #0056b3;
+}
+
+.subheading {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Swiper container */
+.movieList {
+  width: 100%; /* Đảm bảo slider chiếm toàn bộ chiều ngang */
+  max-width: 70%; /* Chiếm 70% màn hình */
+  margin: auto; /* Căn giữa slider */
+}
+
+/* Movie card */
+.heartIcon {
+  position: absolute;
+  top: 50%; /* Đưa vào giữa theo chiều dọc */
+  left: 50%; /* Đưa vào giữa theo chiều ngang */
+  transform: translate(-50%, -50%); /* Căn giữa tuyệt đối */
+  width: 48px; /* Kích thước lớn hơn */
+  height: 48px;
+  background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center center; /* Icon trái tim */
+  background-size: contain;
+  opacity: 0.5; /* Màu trắng nhạt */
+  transition: opacity 0.3s, transform 0.3s;
+  cursor: pointer;
+  color: #c35454;
+}
+
+/* Hiệu ứng khi hover */
+.movieCard:hover .heartIcon {
+  opacity: 1; /* Làm rõ hơn khi hover */
+  transform: translate(-50%, -50%) scale(1.2); /* Phóng to nhẹ khi hover */
+  filter: brightness(1.5); /* Làm sáng hơn */
+}
+.movieCard .heartIcon.active {
+  opacity: 1; /* Làm rõ hơn khi hover */
+  transform: translate(-50%, -50%) scale(1.2); /* Phóng to nhẹ khi hover */
+  filter: brightness(1.5); /* Làm sáng hơn */
+}
+/* Movie card */
+.movieCard {
+  color: #f5f5f5;
+  position: relative; /* Để icon trái tim có thể căn giữa */
+  width: 120px;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 35px;
+}
+
+.movieImage {
+  width: 100%; /* Đảm bảo ảnh nằm gọn trong card */
+  height: 160px; /* Chiều cao ảnh */
+  object-fit: cover;
+}
+
+/* Movie title */
+.movieTitle {
+  padding-left: 10px;
+  margin: 10px 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap; /* Ngừng xuống dòng */
+  overflow: hidden; /* Ẩn phần văn bản vượt quá chiều rộng */
+  text-overflow: ellipsis; /* Hiển thị ba chấm khi văn bản quá dài */
+}
+
+.hoat-dong-moi {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 40px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.tieu-de {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.danh-sach-hoat-dong {
+  width: 45%; /* Chiếm 65% chiều rộng */
+  margin-left: 150px;
+}
+
+.hoat-dong-item {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: white;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position:relative ;
+}
+
+.avatar-container {
+  margin-right: 15px; /* Khoảng cách giữa avatar và nội dung */
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+.avatarr {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+
+
+.noi-dung {
+  position: relative;;
+  right: 150px;
+  font-size: 13px;
+  color: #333;
+}
+
+.danh-gia {
+  color: #f5c518;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.thoi-gian {
+ 
+  position: absolute; /* Để căn phần thời gian ra ngoài luồng Flexbox */
+  right: 20px; /* Cách lề phải 20px */
+  font-size: 13px;
+  color: #888;
+}
+
+.phe-binh-chuyen-nghiep {
+  width: 25%; /* Chiếm 30% chiều rộng */
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin-right: 180px;
+  position: relative;
+}
+
+.phe-binh-chuyen-nghiep h3{
+  font-size: 20px;
+}
+.tieu-de-phu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tieu-de-phu h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.tieu-de-phu span {
+  font-size: 13px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.danh-sach-phe-binh {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.phe-binh-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.avatar {
+  width: 40px; /* Điều chỉnh kích thước ảnh đại diện */
+  height: 40px; /* Đảm bảo ảnh vuông */
+  border-radius: 50%;
+  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+  margin-left: 150px;
+}
+
+.thong-tin {
+  right: 130px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Căn giữa thông tin theo chiều dọc */
+}
+
+.ten {
+  font-weight: bold;
+  font-size: 13px;
+  color: #333;
+}
+
+.mo-ta {
+  font-size: 12px;
+  color: #666;
+}
+
+.phe-binh-item:last-child {
+  border-bottom: none;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movieCard {
+  width: 90%; /* Tùy chỉnh kích thước theo ý muốn */
+}
+ 
+
+/* Media query cho màn hình máy tính bảng */
+@media (max-width: 768px) {
+  .trendingMovies {
+    padding: 10px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .subheading {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+ 
+
+  .movieCard {
+    width: 100px; /* Giảm kích thước card */
+  }
+
+  .movieImage {
+    height: 140px;
+  }
+
+  .movieTitle {
+    font-size: 10px;
+  }
+
+  .hoat-dong-moi {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .danh-sach-hoat-dong {
+    width: 80%; /* Chiếm toàn bộ chiều rộng */
+    margin-left: 80px;
+  }
+
+  .hoat-dong-item {
+    position: relative;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .avatar-container {
+ margin-right: 363px;
+
+   
+  }
+
+  .noi-dung {
+    position: absolute;
+    font-size: 12px;
+    margin-right:-20px;
+    margin-top: 13px;
+  }
+.thoi-gian{
+  margin-top: 10px;
+}
+  .phe-binh-chuyen-nghiep {
+    margin-top: 15px;
+    width: 80%; /* Chiếm toàn bộ chiều rộng */
+  margin-left: 80px;
+    padding: 20px;
+  }
+
+  .tieu-de-phu h3 {
+    font-size: 16px;
+  }
+
+  .tieu-de-phu span {
+    font-size: 12px;
+  }
+
+  .avatar {
+    margin-left: 150;
+  }
+
+  .thong-tin {
+    right: 125px;
+  }
+
+  .ten, .mo-ta {
+    font-size: 12px;
+  }
+}
+
+/* Điều chỉnh chung cho toàn bộ layout */
+@media (max-width: 480px) {
+  /* Trung tâm nội dung chính */
+  .trendingMovies {
+    padding: 10px;
+    max-width: 100%; /* Chiếm toàn bộ chiều rộng màn hình */
+  }
+
+  .movieCard {
+    width: 80%; /* Mỗi card chiếm toàn bộ chiều rộng */
+    margin-bottom: 30px; /* Khoảng cách giữa các card */
+  }
+
+  /* Điều chỉnh tiêu đề */
+  .heading {
+    font-size: 20px;
+  }
+
+  .subheading {
+    font-size: 14px;
+  }
+
+  /* Hoạt động mới */
+  .hoat-dong-moi {
+    flex-direction: column; /* Chuyển sang hiển thị theo cột */
+    padding: 10px;
+  }
+
+  .danh-sach-hoat-dong {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    margin: 0; /* Loại bỏ khoảng cách thừa */
+  }
+
+  .hoat-dong-item {
+    padding: 10px;
+  }
+
+  .avatar-container {
+    margin-right: 10px;
+    
+  }
+
+  .noi-dung {
+    font-size: 10px;
+  margin-left: 80px;
+ margin-top: 5px;
+  }
+
+  .thoi-gian {
+    font-size: 10px;
+    right: 5px;
+  }
+
+  /* Phê bình chuyên nghiệp */
+  .phe-binh-chuyen-nghiep {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    margin: 10px 0;
+  }
+
+  .phe-binh-item {
+    padding: 8px 0;
+  }
+
+  .avatar {
+    width: 35px; /* Giảm kích thước avatar */
+    height: 35px;
+    margin-left: 10px;
+  }
+
+  .thong-tin {
+    right: 0;
+  }
+
+  .ten {
+    font-size: 12px;
+  }
+
+  .mo-ta {
+    font-size: 11px;
+  }
+
+  /* Điều chỉnh Swiper */
+  .swiper-slide {
+    width: 80%; /* Chiếm phần lớn chiều ngang */
+    margin: auto;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+ 
+}

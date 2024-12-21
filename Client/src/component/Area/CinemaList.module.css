@@ -1,0 +1,94 @@
+.cinemaContainer {
+  max-width: 800px; /* Giảm kích thước chiều rộng */
+  margin: 30px auto; /* Căn giữa */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  border-radius: 8px; /* Bo góc */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+}
+.searchBox {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.searchBox input {
+  width: 100%;
+  padding: 10px 14px 10px 40px; /* Dành chỗ cho icon */
+  font-size: 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s;
+}
+
+.searchBox input:focus {
+  border-color: #1e90ff;
+  outline: none;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 12px; /* Vị trí icon */
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 16px;
+}
+
+
+.cinemaList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cinemaItem {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: #f9fafc;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cinemaItem:hover {
+  transform: translateY(-3px); /* Hiệu ứng nổi */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cinemaLogo {
+  width: 50px;
+  height: 50px;
+  margin-right: 16px;
+  border-radius: 50%; /* Logo bo tròn */
+  border: 1px solid #ddd;
+  object-fit: cover;
+}
+
+.cinemaName {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.ticketBadge {
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 12px;
+  margin-left: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.cinemaAddress {
+  margin: 6px 0 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}

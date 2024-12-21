@@ -1,0 +1,376 @@
+.combo-list {
+
+    display: flex;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-left: 160px;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 60px;
+  }
+  .thongtincombo{
+      margin-top: 0px;
+      border-radius: 10px;
+      width: 700px;
+      border: 1px solid #ddd;
+      
+  }
+  .combo-header {
+      border-color: inherit;
+      font-family: "Cerebri Sans, sans-serif";
+      height: 50px;
+      border-radius: 10px 10px 0 0;
+      display: grid;
+      grid-template-columns: 2.7fr 1fr 1fr;
+      font-weight: bold;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd ;
+      text-transform: uppercase;
+      color: #95aac9;
+      background-color:#fafafa;
+      font-weight: 500;
+  }
+  .combo-header .item{
+      line-height: 27px;
+      margin-left: 20px;
+  }
+  
+  .combo-item {
+      font-family: "Cerebri Sans, sans-serif";
+      margin-left: 15px;
+      width: 650px;
+      display: grid;
+      grid-template-columns: 3fr 1fr 1fr;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: 1px solid #eee;
+      color: #12263f;
+  
+  
+  }
+  
+  .combo-info {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .combo-name {
+   font-weight: 400;
+      color: #12263f;
+   padding-bottom: 5px;
+  }
+  
+  .combo-description {
+      font-size: 15px;
+      color: #95aac9;
+  }
+  
+  .combo-price {
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+     
+     
+  }
+  
+  .combo-quantity {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 30px;
+  }
+  .combo-quantity .iconcong{
+      border: 1px solid #e3ebf6;
+      width: 25px;
+      height: 25px;
+  }
+  .combo-quantity button {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+      text-align: center;
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      color: #333;
+  }
+  .details-box {
+      font-family: 'Cerebri Sans';
+      border: 1px solid #EDF2F9;
+      width: 400px;
+      color: rgba(0, 0, 0, 0);
+      padding: 10px;
+      background-color: #ffffff;
+      margin-bottom: 20px;
+      text-align: left;
+      border-radius: 5px;
+      margin-left: 30px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
+                  0 6px 6px rgba(0, 0, 0, 0.1),
+                  0 20px 40px rgba(0, 0, 0, 0.05);
+      height: 150px;
+     
+    }
+    .details-box span {
+      font-weight: 600;
+      font-family: "Cerebri Sans";
+    }
+    .details-box p {
+      color: #000000;
+      font-family: "Cerebri Sans, sans-serif;";
+      margin-bottom: 0rem
+    }
+    .price-box {
+      border: 1px solid #EDF2F9;
+      background-color: #ffffff;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      margin-left: 30px;
+      padding-left: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
+                  0 6px 6px rgba(0, 0, 0, 0.1),
+                  0 20px 40px rgba(0, 0, 0, 0.05);
+    }
+    
+    .price-box .price {
+      font-size:16px;
+      font-weight: bold;
+      color: #95AAC9;
+    }
+    
+    .price-box .price span {
+      color: #000000;
+    }
+    
+  .combo-quantity span {
+      margin: 0 10px;
+      font-size: 16px;
+      width: 20px;
+      text-align: center;
+  }
+ /* Phần khung chi tiết phim */
+/* Tổng container bao bọc tất cả */
+.thongtinphim-container {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Khung thông tin phim */
+  .thongtinphim2 {
+    font-family: "Cerebri Sans, sans-serif;";
+    margin-top: -20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 350px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .details-box2 p {
+    margin: 5px 0;
+  }
+  
+  .details-box2 span {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Khung tổng đơn hàng */
+  .price-box2 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    width: 350px;
+    text-align: left;
+    font-size: 18px;
+    color: #5c5c5c;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .tongdonhangg{
+    color: #95AAC9 !important;
+  }
+  .price-box2 span {
+    font-size: 20px;
+    color: #000;
+  }
+  .tenphimm{
+    font-size: 18px;
+    font-weight:500;
+  }
+  /* Nút hành động */
+  .actionsts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+  }
+  
+  .back-btn2 {
+    width: 130px;
+    background-color: white;
+    color: #333;
+    font-size: 14px;
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .back-btn2 span {
+    font-size: 18px;
+  }
+  
+  .continue-btn2 {
+    width: 150px;
+    background-color: #5c7ea4;
+    color: white;
+    padding: 10px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .continue-btn2:hover {
+    background-color: #476b8e;
+  }
+  
+  
+  /* Media Queries for devices with max width of 992px */
+  @media (max-width: 992px) {
+      .combo-list {
+          flex-direction: column;
+          margin-left: 0;
+          padding: 10px;
+      }
+  
+      .thongtincombo {
+          width: 658px;
+          margin-left: 125px;
+      }
+  
+      .combo-header {
+          grid-template-columns: 2fr 1fr 1fr; /* Giữ cấu trúc 3 cột */
+          text-align: center;
+      }
+  .thongtinphim2{
+    margin-top: 10px;
+      width: 498px;
+      margin-left: 12px;
+  }
+  .price-box2{
+    width: 498px;
+    margin-left: 12px;
+  }
+      .combo-item {
+          grid-template-columns: 2fr 1fr 1fr; /* Giữ bố cục 3 cột khi trên 992px */
+          width: 100%;
+          padding: 10px 0;
+          align-items: center;
+      }
+  
+      .combo-quantity {
+          justify-content: center;
+          align-items: center;
+          padding-left: 0;
+      }
+  
+      .combo-quantity span {
+          margin: 0 5px;
+      }
+  
+  
+      .back-btn2, .continue-btn2 {
+          width: 100%;
+      }
+   
+    
+     
+     .actionsts{
+      margin-left: 12px !important;
+      width: 498px !important;
+     }
+     .back-btn2{
+         margin-left: 1px;
+         padding-left: 40px;
+     }
+     .continue-btn2{
+      margin-left: 50px;
+     }
+  }
+  @media (max-width: 768px){
+      .thongtincombo {
+          width: 500px;
+          margin-left: 140px;
+      }
+      .price-box, .details-box{
+          margin-left: 3px !important;
+      }
+      .actionsts{
+          margin-left: 10px;
+      }
+  }
+  /* Media Queries for devices with max width of 480px */
+  @media (max-width: 480px) {
+      .combo-list {
+          flex-direction: column;
+          padding: 10px;
+      }
+  
+      .combo-header {
+          grid-template-columns: 1fr 1fr 1fr; /* Giữ cấu trúc như ở màn 480px */
+          text-align: center;
+      }
+  
+      .combo-item {
+          grid-template-columns: 1fr 1fr 1fr;
+          padding: 10px 0;
+          width: 100%;
+          align-items: center;
+      }
+  
+      .combo-quantity {
+          justify-content: center;
+          padding-left: 0;
+      }
+  
+      .combo-quantity span {
+          margin: 0 5px;
+      }
+  
+      .thongtinphim2 {
+        width: 408px;
+          margin-top: 10px;
+          padding: 10px;
+         margin-left: -15px;
+     
+      }
+      .thongtincombo{
+          width: 100%;
+          margin-left: 1px;
+      }
+  .price-box2{
+    width: 408px;
+    margin-right: 25px;
+  }
+  .actionsts{
+    width: 408px !important;
+    margin-right: 25px;
+  }
+      
+  }

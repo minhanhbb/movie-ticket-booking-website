@@ -1,0 +1,236 @@
+/* Các kiểu mặc định */
+.showtimes-management {
+    padding: 20px;
+    background: rgb(229, 240, 242);
+    min-height: 170vh;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.showtimes-management h2 {
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+    color: #262626;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.add-showtime-btn {
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.add-showtime-btn:hover {
+    background-color: #e67e22;
+}
+
+.table-container1 {
+    width: 100%;
+    max-width: 1300px;
+    overflow-x: auto;
+    border-radius: 8px;
+    background-color: #f4f6f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.showtime-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    color: #006064;
+}
+
+.showtime-table th {
+    background-color: #e0f7fa;
+    color: #00796b;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+    text-transform: none;
+    border-bottom: 1px solid #b2ebf2;
+}
+
+.showtime-table td {
+    padding: 10px;
+    background-color: #ffffff;
+    color: #00796b;
+    border-bottom: 1px solid #b2ebf2;
+    text-align: center;
+}
+
+.showtime-table tr:nth-child(even) {
+    background-color: #f1f8e9;
+}
+
+.showtime-table tbody tr:hover {
+    background-color: #b2ebf2;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.action-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #00796b !important;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.edit-btn:hover {
+    color: #f1c40f;
+}
+
+.delete-btn:hover {
+    color: #e74c3c;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.page-btn, .prev-btn, .next-btn {
+    padding: 8px 12px;
+    background-color: #00796b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.page-btn.active {
+    background-color: #004d40;
+}
+
+.page-btn:hover:not(.active), 
+.prev-btn:hover, 
+.next-btn:hover {
+    background-color: #004d40;
+}
+
+.prev-btn:disabled,
+.next-btn:disabled {
+    background-color: #b2dfdb;
+    cursor: not-allowed;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .showtimes-management {
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .showtimes-management h2 {
+        font-size: 1.5rem;
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .add-showtime-btn {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .showtime-table {
+        font-size: 12px;
+    }
+
+    .showtime-table th, .showtime-table td {
+        padding: 8px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .action-buttons button {
+        margin-bottom: 5px;
+    }
+
+    .pagination {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-btn, .prev-btn, .next-btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .showtimes-management {
+        padding: 10px;
+    }
+
+    .showtimes-management h2 {
+        font-size: 1.25rem;
+    }
+
+    .add-showtime-btn {
+        padding: 8px;
+    }
+
+    .showtime-table {
+        font-size: 10px;
+    }
+
+    .showtime-table th, .showtime-table td {
+        padding: 5px;
+    }
+
+    .action-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .action-buttons button {
+        margin: 10 3px;
+    }
+
+    .pagination {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .page-btn, .prev-btn, .next-btn {
+        width: auto;
+        margin: 2px;
+        padding: 5px 8px;
+    }
+}

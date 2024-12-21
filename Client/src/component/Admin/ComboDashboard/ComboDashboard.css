@@ -1,0 +1,158 @@
+.combo-dashboard {
+    padding: 20px;
+    background: rgb(229, 240, 242); /* Nền xanh nhạt */
+    min-height: 170vh;
+    color: #333; 
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.combo-dashboard h2 {
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+    color: #006064; 
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.add-combo-btn {
+    padding: 10px 20px;
+    background-color: #f39c12; 
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.add-combo-btn:hover {
+    background-color: #e67e22; 
+}
+
+.table-container-combo {
+    width: 100%;
+    max-width: 1300px;
+    overflow-x: auto;
+    border-radius: 8px;
+    background-color: #f4f6f7; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.combo-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.combo-table th {
+    background-color: #e0f7fa; 
+    color: #00796b; 
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.combo-table td {
+    padding: 15px;
+    background-color: #ffffff; 
+    color: #00796b; 
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 0.875rem;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.combo-table tr:nth-child(even) {
+    background-color: #f1f8e9; 
+}
+
+.combo-table tbody tr:hover {
+    background-color: #b2ebf2; 
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.action-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #00796b; 
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    padding: 8px 12px;
+}
+
+.delete-btn {
+    color: #e74c3c;
+}
+
+.delete-btn:hover {
+    color: #c0392b;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.prev-btn, .next-btn, .page-btn {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #00796b; /* Button color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.page-btn.active {
+    background-color: #004d40; /* Active button color */
+}
+
+.prev-btn:disabled,
+.next-btn:disabled {
+    background-color: #b2dfdb; /* Disabled button color */
+    cursor: not-allowed; /* Cursor for disabled */
+}
+
+.prev-btn:hover:not(:disabled),
+.next-btn:hover:not(:disabled),
+.page-btn:hover:not(.active) {
+    background-color: #004d40; /* Hover color */
+}
+
+@media (max-width: 768px) {
+    .combo-table th, .combo-table td {
+        font-size: 0.875rem;
+        padding: 10px;
+    }
+
+    .add-combo-btn {
+        width: 100%;
+        font-size: 0.875rem;
+    }
+
+    .view-btn, .edit-btn, .delete-btn {
+        padding: 8px 12px;
+    }
+}

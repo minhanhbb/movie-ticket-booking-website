@@ -1,0 +1,531 @@
+.article-container {
+  padding: 20px;
+
+  margin: auto;
+  margin-bottom: 30px !important;
+}
+
+.article-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.article-meta {
+  color: #999;
+  font-size: 14px;
+} /* Container cho toàn bộ bài viết và phần bài viết liên quan */
+.article-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f7f7f9;
+}
+
+/* Phần bài viết chính */
+.main-content {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Tiêu đề bài viết */
+.article-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Meta thông tin */
+.article-meta {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+}
+
+/* Container cho phần nội dung và poster */
+.article-content-container {
+  display: flex !important;
+  align-items: center;
+  gap: 20px;
+  background-color: #e0e6ef;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+  height: 130px;
+}
+
+.article-content-container .article-poster {
+  width: 70px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.article-movie-info {
+  flex: 1;
+  text-align: left;
+  padding-top: 15px;
+}
+.article-movie-info h2 {
+  font-size: 19px !important;
+  font-weight: bold;
+}
+
+.article-button {
+  padding: 10px 20px;
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 50px;
+  margin-top: 25px;
+}
+.article-button a{
+  text-decoration: none;
+  color: #fff;
+}
+.article-paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 10px;
+  text-align: left;
+}
+.article-description {
+  text-align: left;
+
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* Phần bài viết liên quan */
+.related-posts-container {
+  flex: 0 0 30%;
+  padding: 10px;
+  background-color: #f1f5fb;
+  border-radius: 8px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.related-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+}
+
+.related-meta {
+  color: #999;
+  font-size: 12px;
+}
+
+.article-content-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #e0e6ef;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.article-poster {
+  width: 100px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.article-movie-info {
+  flex: 1;
+  font-size: 14px;
+}
+
+.article-button {
+  padding: 10px 20px;
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.article-description {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.article-paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.sample-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.main-content h2 {
+  font-size: 24px;
+  text-align: left;
+  font-weight: 600;
+}
+.main-content p {
+  text-align: left;
+}
+.post-media-caption {
+  color: #95aac9;
+  font-size: 0.8125rem;
+  padding: 0.375rem;
+  position: relative;
+  text-align: center;
+  margin-top: -10px;
+}
+/* Card bài viết liên quan */
+.card-article {
+  width: 400px;
+  margin-top: 20px;
+  height: 200px;
+  border: none;
+}
+
+.card-header {
+  background-color: #edf2f9;
+}
+.card-header-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #12263f;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.card-body-1 {
+  display: flex !important;
+  align-items: center;
+  gap: 15px;
+  background-color: white;
+}
+
+.related-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.card-body-1 p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.related-meta {
+  font-size: 12px;
+  color: #f75175 !important; /* Màu đỏ hồng tương tự như hình mẫu */
+  margin-top: 5px;
+  font-weight: 100 !important;
+}
+/* Style for button group */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Main button with red background */
+.main-button {
+  padding: 10px 20px;
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 48%;
+  height: 40px;
+}
+
+.main-button:hover {
+  background-color: #ff6666;
+}
+
+/* Outline button with transparent background */
+.outline-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 48%;
+  margin-left: 30px;
+  height: 40px;
+}
+
+.outline-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Tags container */
+.tags-container {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.tag-label {
+  color: #333;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.tag {
+  padding: 5px 10px;
+  background-color: #e0e6ef;
+  color: #333;
+  border-radius: 15px;
+  font-size: 12px;
+}
+.article-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f7f7f9;
+ 
+}
+.theloaibaiviet{
+  color: orangered;
+}
+
+@media (min-width: 768px) {
+  .article-container {
+    flex-direction: row;
+  }
+}
+
+.main-content {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+}
+
+.related-posts-container {
+  flex: 0 0 100%;
+  padding: 10px;
+  background-color: #f1f5fb;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .related-posts-container {
+    flex: 0 0 30%;
+    margin-top: 0;
+  }
+}
+
+.article-title {
+  font-size: 20px;
+}
+
+.article-meta,
+.related-meta {
+  font-size: 12px;
+}
+
+.article-content-container {
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.article-poster {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .article-title {
+    font-size: 24px;
+  }
+
+  .article-poster {
+    width: 70px;
+    height: 100px;
+  }
+}
+
+.button-group {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.main-button,
+.outline-button {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .button-group {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .main-button,
+  .outline-button {
+    width: 48%;
+  }
+}
+
+.article-description,
+.article-paragraph,
+.main-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+
+  margin-top: 10px;
+}
+
+.card-article {
+  width: 400px;
+  margin-top: 20px;
+  height: 200px;
+  border: none;
+}
+
+.card-header {
+  background-color: #edf2f9;
+}
+
+.card-header-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #12263f;
+}
+
+.card-body-1 {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  background-color: white;
+padding-bottom: 10px;
+}
+
+.related-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.card-body-1 p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.col-auto img{
+height: 50px ;
+
+width: 100px;
+margin-top: 15px;
+margin-left: 15px;
+}
+.post-meta-2 a{
+  text-decoration: none;
+  color: #333;
+}
+.related-meta {
+  font-size: 12px;
+  color: #f75175;
+  margin-top: 5px;
+  font-weight: 100;
+}
+
+.tags-container {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.tag-label {
+  color: #333;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.tag {
+  padding: 5px 10px;
+  background-color: #e0e6ef;
+  color: #333;
+  border-radius: 15px;
+  font-size: 12px;
+}
+.article-content-container {
+  flex-direction: row;
+}
+@media (max-width: 992px) {
+  .article-container {
+    flex-direction: column;
+  }
+  .card-article {
+    width: 850px ;
+  }
+
+  .article-movie-info h2 {
+    font-size: 14px !important;
+  }
+  .article-title {
+    font-size: 18px !important;
+  }
+  .article-button {
+    margin: 15px !important;
+  }
+  .article-meta {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 580px) {
+  .article-movie-info h2 {
+    font-size: 11px !important;
+  }
+  .article-button {
+    width: 80px;
+    height: 40px;
+    font-size: 9px;
+  }
+  .card-article {
+    width: 400px;
+  }
+}

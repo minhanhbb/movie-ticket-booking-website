@@ -1,0 +1,21 @@
+import React from 'react';
+import './Showtimes.css'
+import Sidebar from '../../../component/Admin/SidebarDashboard/Sidebar';
+import Header from '../../../component/Admin/HeaderDashboard/Header1';
+import ShowtimesDashboard from '../../../component/Admin/ShowtimesDashboard/ShowtimesDashboard';
+
+
+
+function ShowtimesManager() {
+    return (
+        <div className="showtimesmanager">
+            <Sidebar />
+            <div className="showtimesadmin">
+                <Header />
+                <ShowtimesDashboard/>
+            </div>
+        </div>
+    );
+}
+
+export default ShowtimesManager;

@@ -1,0 +1,108 @@
+.status-pain {
+    background-color:#28a745; /* Màu xanh lá cây cho trạng thái đã thanh toán */
+    color: #fff; /* Màu chữ trắng */
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+  
+.status-confirmed {
+    background-color: #007bff; /* Màu xanh dương cho trạng thái đã xác nhận */
+    color: #fff; /* Màu chữ trắng */
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+element.style {
+}:where(.css-dev-only-do-not-override-vryruh).ant-pagination .ant-pagination-item {
+    margin-top: 10px !important;
+    line-height: 13px;
+}
+.status-pending {
+    background-color: #ffc107; /* Màu vàng cho trạng thái đang chờ */
+    color: #212529; /* Màu chữ đen */
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+  
+.status-default {
+    background-color: #6c757d; /* Màu xám cho trạng thái mặc định */
+    color: #fff; /* Màu chữ trắng */
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.order-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .order-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+  
+  .order-main {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .order-table th, .order-table td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .order-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .ticket-status, .user-info, .payment-info {
+    background: #f9f9f9;
+    padding: 20px;
+    width: 400px;
+    border-radius: 8px;
+  }
+  
+  .ticket-status img, .user-info img {
+    max-width: 100%;
+    height: auto;
+  }
+  .ticket-status {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .ticket-status h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .ticket-status p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .ticket-status img {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px 0;
+  }
+  
+  .ticket-status button {
+    margin-top: 10px;
+  }
+  

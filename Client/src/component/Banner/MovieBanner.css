@@ -1,0 +1,195 @@
+/* Container for the entire movie banner section */
+.movie-banner {
+  margin: 0;
+  padding: 65px;
+  background-color: white;  
+ margin-top: -40px;
+}
+
+/* Header for the banner with the currently showing and upcoming movies */
+.banner-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.banner-header h2 {
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+ 
+}
+
+.banner-header h2.active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Slider container styling */
+.slider-container {
+  margin: 0 auto;
+  width: 85%;
+}
+
+/* Each individual movie item in the slider */
+.movie-item {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  margin: 3px;
+  margin-right: 10px;
+  height: 320px;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Image of the movie poster */
+.movie-item img {
+  width: 100%;
+ 
+  object-fit: cover;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+}
+
+/* Info container below the movie image */
+.movie-info {
+  padding: 10px 0;
+}
+
+.movie-info p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.movie-info span {
+  margin-right: 13px;
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #6c757d;
+  text-align: left;
+}
+
+
+
+/* Buy ticket button */
+.buy-ticket {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  background-color: #d50000;
+  color: white;
+  font-size: 0.9em;
+  font-weight: bold;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  text-align: center;
+  margin-top: -20px;
+}
+.buy-ticket a{
+  text-decoration: none;
+  color: aliceblue;
+}
+.buy-ticket:hover {
+  background-color: #c82333;
+}
+
+.name_movie {
+  padding-left: 8px;
+       /* Chiều rộng tối đa cho tên phim */
+  white-space: nowrap;  /* Không cho xuống dòng */
+  overflow: hidden;     /* Ẩn phần nội dung tràn ra */
+  text-overflow: ellipsis; /* Hiển thị dấu ba chấm (...) */
+ 
+}
+.banner-header a{
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+/* Movie rating styling */
+.movie-info .rating-1 {
+  color: #28a745;
+  font-weight: bold;
+  text-align: right;
+  position: relative;
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Ẩn các dấu chấm ngoài vùng hiển thị */
+}
+
+.slick-dots li {
+  max-width: 50px; /* Giới hạn độ rộng của mỗi dấu chấm */
+  flex-shrink: 0;
+}
+
+
+
+/* Responsive styles for mobile phones */
+@media (max-width: 768px) {
+  .movie-item {
+    height: 400px;
+    margin: 15px;
+  }
+  .slider-container {
+    margin: 0 auto;
+    width: 107%;
+    margin-left: -32px;
+}
+
+}
+/* Responsive styles for smaller mobile screens */
+@media (max-width: 480px) {
+  .slider-container {
+    width: 370px; /* Full width for mobile */
+  position: relative
+  ;
+  right: 50px;
+  }
+  .slider-container {
+  
+    margin-left: 10px;
+}
+
+  .movie-item {
+    height: 260px;
+    margin: 7px;
+  }
+
+  .movie-info p {
+    font-size: 0.8em;
+  }
+
+  .buy-ticket {
+    font-size: 0.75em;
+    padding: 5px;
+  }
+  .movie-info span{
+    margin-right: 7px;
+  }
+  .icon-likee{
+    left: 4px !important;
+  }
+}
+
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Ẩn các dấu chấm ngoài vùng hiển thị */
+}
+
+.slick-dots li {
+  max-width: 50px; /* Giới hạn độ rộng của mỗi dấu chấm */
+  flex-shrink: 0;
+}
+
+.slick-dots li:nth-child(n+5) {
+  display: none; /* Ẩn các dấu chấm từ thứ 5 trở đi */
+}

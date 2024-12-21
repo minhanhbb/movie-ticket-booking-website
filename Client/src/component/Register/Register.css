@@ -1,0 +1,144 @@
+/* Container to center the form */
+.custom-register-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* Form styling */
+.custom-register-form {
+  width: 50%;
+  padding-bottom: 50px;
+  margin: 0;
+}
+.custom-register-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+/* Form group styling */
+.custom-form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* Form field styling */
+.custom-form-field {
+  width: 48%;
+}
+
+.custom-form-field label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.custom-form-field input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Submit button styling */
+.custom-submit-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #0D1E36;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.custom-submit-btn:hover {
+  background-color: black;
+}
+
+/* Login link */
+.custom-login-link {
+  text-align: center;
+  margin-top: 15px;
+  color: #555;
+}
+
+.custom-login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.custom-login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Image container */
+.custom-image-container {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .custom-register-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center align items */
+    gap: 30px; /* Increase gap between form and image container */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .custom-register-form {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .custom-image-container {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-register-form h2 {
+    font-size: 32px; /* Smaller font size for headings */
+  }
+
+  .custom-form-group {
+    flex-direction: column; /* Stack form fields vertically */
+  }
+
+  .custom-form-field {
+    width: 100%; /* Full width for form fields */
+    margin-bottom: 10px; /* Smaller margin for form fields */
+  }
+
+  .custom-form-field label {
+    font-size: 12px; /* Smaller font size for labels */
+  }
+
+  .custom-form-field input {
+    padding: 10px; /* Smaller padding for inputs */
+    font-size: 12px; /* Smaller font size for inputs */
+  }
+
+  .custom-submit-btn {
+    font-size: 14px; /* Smaller font size for button text */
+  }
+}
+.error-message{
+  color: red;
+}

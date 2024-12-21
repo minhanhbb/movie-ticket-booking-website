@@ -1,0 +1,255 @@
+/* General Ticket Style */
+.ticket-container {
+    display: flex;             /* Hiển thị vé theo chiều ngang */
+    justify-content: flex-start; /* Căn chỉnh các vé đều nhau */
+    gap: 40px;                 /* Khoảng cách giữa các vé */
+    margin-top: 20px;          /* Khoảng cách từ trên xuống */
+    flex-wrap: wrap;
+    margin-right: 100px;
+    align-items: flex-start;
+    
+}
+.ticket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Shadow nhẹ hơn */
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Left Section */
+.ticket-left {
+    height: 190px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    flex: 2;
+    background: linear-gradient(135deg, #ff8a65, #ff7043); /* Màu cam sáng dịu nhẹ */
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #ffffff; /* Màu trắng tinh tế */
+    position: relative;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ticket Title */
+.ticket-title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff; /* Màu trắng để tạo sự nổi bật */
+    white-space: normal;
+    line-height: 1.3;
+}
+
+/* Stars */
+.stars-container {
+    display: flex;
+    justify-content: center;
+}
+
+.star {
+    font-size: 20px;
+    margin: 0 3px;
+    color: #ffd54f; /* Vàng sáng nhẹ để tạo sự ấm áp */
+}
+
+/* Ticket Info */
+.ticket-info p {
+    margin-left: -10px;
+    font-size: 12px;
+    color: #ffffff; /* Màu chữ sáng để tạo độ tương phản */
+    margin: 3px 0;
+}
+
+.ticket-info p span {
+    color: #333333; /* Màu chữ đen cho phần thông tin quan trọng */
+    font-weight: 600;
+    padding-left: 3px;
+}
+
+.infofl {
+    padding-left: 5px;
+    display: flex;
+}
+
+/* Right Section */
+.ticket-right {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 190px;
+    flex: 1;
+    background-color: #ffffff; /* Nền trắng để tạo sự tươi sáng */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #333;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* QR Code */
+.qr-code {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 8px;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Barcode Text */
+.barcode-text {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+/* Admit One */
+.admit-one {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff5722; /* Màu cam đậm cho "Admit One" */
+    text-align: center;
+    letter-spacing: 0.3px;
+    margin-top: 6px;
+}
+
+/* Circular Corners */
+.ticket-left:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -12px;
+}
+
+.ticket-right:after {
+    right: -12px;
+}
+
+.timee, .seatt {
+    padding-left: 20px;
+}
+
+/* Responsive Design */
+/* Responsive cho màn hình iPad (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .ticket-container {
+        justify-content: center; /* Căn giữa các vé */
+        gap: 20px;              /* Giảm khoảng cách giữa các vé */
+        margin-right: 0;        /* Xóa khoảng cách bên phải */
+    }
+
+    .ticket {
+        width: 350px;           /* Giảm chiều rộng của vé */
+        height: 180px;          /* Giảm chiều cao của vé */
+    }
+
+    .ticket-left {
+        height: 170px;
+    }
+
+    .ticket-right {
+        height: 170px;
+    }
+
+    .ticket-title {
+        font-size: 18px;        /* Giảm kích thước chữ tiêu đề */
+    }
+
+    .qr-code {
+        width: 80px;            /* Giảm kích thước QR Code */
+        height: 80px;
+    }
+
+    .barcode-text {
+        font-size: 12px;        /* Giảm kích thước chữ mã vạch */
+    }
+
+    .admit-one {
+        font-size: 14px;        /* Giảm kích thước chữ "Admit One" */
+    }
+}
+
+/* Responsive cho màn hình điện thoại (nhỏ hơn 768px) */
+@media (max-width: 767px) {
+    .ticket-container {
+        flex-direction: column; /* Xếp vé theo chiều dọc */
+        align-items: center;    /* Căn giữa các vé theo trục dọc */
+        gap: 20px;              /* Giảm khoảng cách giữa các vé */
+        margin-right: 0;        /* Xóa khoảng cách bên phải */
+    }
+
+    .ticket {
+        width: 90%;             /* Đặt chiều rộng vé theo tỷ lệ màn hình */
+        height: auto;           /* Tự động điều chỉnh chiều cao */
+        flex-direction: column; /* Xếp nội dung vé theo chiều dọc */
+        padding: 15px;          /* Tăng padding để tạo khoảng trống */
+    }
+
+    .ticket-left {
+        width: 100%;            /* Chiếm toàn bộ chiều ngang */
+        height: auto;           /* Tự động điều chỉnh chiều cao */
+        padding: 15px;
+        border-right: none;     /* Bỏ đường viền bên phải */
+        border-bottom: 2px solid #ffffff; /* Đường viền dưới */
+    }
+
+    .ticket-right {
+        width: 100%;            /* Chiếm toàn bộ chiều ngang */
+        height: auto;           /* Tự động điều chỉnh chiều cao */
+        padding: 10px 0;
+    }
+
+    .ticket-title {
+        padding-top: 10px;
+        font-size: 16px;        /* Giảm kích thước tiêu đề */
+        line-height: 1.2;
+        
+    }
+
+    .qr-code {
+        width: 70px;            /* Giảm kích thước QR Code */
+        height: 70px;
+    }
+
+    .barcode-text {
+        font-size: 12px;        /* Giảm kích thước chữ mã vạch */
+    }
+
+    .admit-one {
+        font-size: 14px;        /* Giảm kích thước chữ "Admit One" */
+    }
+
+    .stars-container {
+        margin-top: px;       /* Tạo khoảng cách giữa sao và nội dung */
+    }
+
+    .ticket-info p {
+        font-size: 12px;        /* Giảm kích thước chữ thông tin vé */
+    }
+
+    .timee, .seatt {
+        padding-left: 0;        /* Loại bỏ padding thừa */
+        text-align: center;     /* Căn giữa nội dung */
+    }
+}

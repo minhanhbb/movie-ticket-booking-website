@@ -1,0 +1,613 @@
+#search-mobile{
+  display: none;
+
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 82px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 80px;
+    
+}
+
+/* Biểu tượng thông báo */
+.thongbao {
+  position: relative;
+  cursor: pointer;
+  font-size: 24px;
+  color: #1890ff;
+}
+.diachirap{
+  font-size: 13px;
+  display: block;
+  white-space: nowrap; /* Prevent wrapping to a new line */
+  overflow: hidden; /* Hide overflowed text */
+  text-overflow: ellipsis; /* Add ellipses for overflowed text */
+}
+.item-cinema:hover{
+  cursor: pointer;
+}
+.cinemabox-4{
+  display: flex;
+  border-bottom: 1px solid rgb(169, 152, 152);
+}
+.logo-cinema{
+  font-size: 12px;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.notification-dropdown {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 200px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.notification-dropdown p {
+  font-size: 14px;
+  color: #333;
+  margin: 8px 0;
+  display: flex;
+  align-items: center; /* Căn giữa nội dung */
+}
+
+.notification-dropdown p:first-child {
+  margin-top: 0;
+}
+
+.notification-dropdown p:last-child {
+  margin-bottom: 0;
+}
+
+/* Thêm icon voucher */
+.voucher-icon {
+  color: orange;
+  font-size: 16px; /* Kích thước icon */
+  margin-right: 8px; /* Khoảng cách giữa icon và văn bản */
+}
+
+/* Tạo hiệu ứng hover cho các mục thông báo */
+.notification-dropdown p:hover {
+  background-color: #f0faff;
+  cursor: pointer;
+}
+
+/* Khi không có thông báo, hiển thị thông báo mặc định */
+.notification-dropdown p {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+.voucher-icon {
+  font-size: 16px; /* Kích thước icon */
+  margin-right: 8px; /* Khoảng cách giữa icon và văn bản */
+}
+
+.notification-dropdown p {
+  font-size: 14px;
+  color: #333;
+  margin: 8px 0;
+  display: flex;
+  align-items: center; /* Căn giữa nội dung */
+}
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .notification-dropdown {
+    width: 180px;
+  }
+  .thongbao {
+    font-size: 20px;
+  }
+}
+
+
+.header-left {
+  position: relative;
+bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "Cerebri Sans", sans-serif; 
+}
+
+.header-left a {
+position: relative;
+  text-decoration: none;
+  color: #6e84a3;
+  font-size: 15px;
+  font-weight: 400;
+bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+
+.header-left a:hover {
+  color: #e50914; /* Red color on hover */
+}
+
+.header-logo {
+ 
+  color: #e50914;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: lowercase;
+
+}
+.header-logo a{
+  
+    font-size: 24px; /* Kích thước chữ tổng thể */
+    font-weight: bold; /* Làm đậm chữ */
+    color: #e50914; /* Màu sắc nổi bật */
+    text-transform: uppercase; /* Chuyển thành in hoa */
+    letter-spacing: 2px; /* Giãn cách giữa các chữ */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+    font-family: "Cerebri Sans", sans-serif; /* Chọn font chữ */
+    
+    display: inline-block;
+    transition: all 0.3s ease; /* Hiệu ứng hover */
+    position: relative;
+    bottom: 5px;
+   right: 79px;
+    
+     text-decoration: none;
+  }
+  
+  .logo-first-letter {
+    font-size: 36px; /* Kích thước lớn hơn cho chữ "F" */
+    color: #e50914; /* Có thể sử dụng màu khác cho chữ "F" */
+ 
+  }
+
+
+.header-right {
+  position: relative;
+  right: 27px;
+  display: flex;
+  align-items: center;
+  gap: 19px; /* Giảm khoảng cách giữa các icon */
+}
+
+.header-right input[type="text"] {
+  padding: 10px 15px;
+  font-size: 14px; /* Giảm font-size để phù hợp với không gian hẹp */
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  width: 250px; /* Điều chỉnh lại chiều rộng của thanh tìm kiếm */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-right input[type="text"]:focus {
+
+  box-shadow: 0 0 8px rgba(226, 151, 155, 0.3);
+  outline: none;
+}
+
+.header-right .icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+
+
+/* Dropdown Styles */
+.dropdown1 {
+  position: relative;
+ 
+}
+.dropbtn{
+  cursor: pointer;
+}
+.dropbtn1 {
+  background-color: transparent;
+  color: #6e84a3;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.dropbtn1 .arrow {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown1:hover .dropbtn1 {
+  color: #e50914;
+}
+
+.dropdown1:hover .dropbtn1 .arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 12px 0;
+  z-index: 1;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.avtat-img { 
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  position: relative; /* Để sử dụng với tích xanh */
+ 
+}
+.checkmark {
+  position: absolute; /* Để định vị biểu tượng tích xanh */
+  bottom: 10px; /* Đưa tích xanh xuống dưới cùng */
+  right: 100px; /* Đưa tích xanh sang bên phải */
+  color:dodgerblue; /* Màu sắc cho tích xanh */
+  font-size: 17px; /* Kích thước cho biểu tượng tích xanh */
+  
+}
+.notification-dropdown {
+  position: absolute;
+  top: 50px; /* Điều chỉnh vị trí phù hợp */
+  right: 30px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.notification-dropdown p {
+  margin: 5px 0;
+}
+.thongbao:hover{
+  cursor: pointer;
+}
+.dropdown-content a {
+  color: #6e84a3;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ 
+/* CSS thêm icon */
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-container input {
+  width: 100%;
+ 
+}
+
+.input-container .icon {
+  position: absolute;
+  right: 1px; /* Khoảng cách từ icon tới mép trái */
+  font-size: 16px;
+  color: #555; /* Màu của icon */
+}
+
+@media (max-width: 1122px) {
+  .fas{
+    display: none !important;
+  }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+
+  .menu button {
+   position: relative;
+   top:10px;
+   
+  }
+  
+  .header-logo {
+      width: 100%;
+      text-align: center;
+     
+  }
+
+  .header-right {
+      justify-content: space-between; /* Tách các icon và thanh tìm kiếm */
+      gap: 10px;
+  }
+
+  .header-right input[type="text"] {
+      width: 60%; /* Thanh tìm kiếm chiếm 60% chiều rộng */
+  }
+
+  .header-right .icon-link {
+      font-size: 20px; /* Giảm kích thước icon */
+  }
+  #search-mobile{
+    display: block;
+  
+  }
+
+}
+
+
+  
+.header-right .icon-link svg {
+  fill: currentColor; /* Giữ màu hiện tại của text */
+  color: inherit;     /* Kế thừa màu từ thẻ cha */
+}
+
+.header-right .icon-link {
+  font-size: 25px;
+  color: inherit; /* Đảm bảo màu icon không thay đổi khi dùng Link */
+  text-decoration: none; /* Loại bỏ gạch chân nếu có */
+}
+.header-logo {
+  padding: 0 !important; /* Xóa padding với ưu tiên cao hơn */
+}
+@media (max-width: 992px) {
+  #menukkk{
+    margin-left: -94px;
+margin-top: 20px;
+   height: 300px;
+
+  }
+
+  .navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' strokeWidth='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  .header-left .dropdown-content {
+    display: none;
+  }
+  .header-left {
+    position: absolute; 
+    top: 60px; 
+    height: 220px;
+    width: 100%;
+    display: none; 
+    flex-direction: column; /* Chuyển đổi sang menu dọc */
+    align-items: flex-start; 
+    z-index: 999;
+    background-color:#fff; 
+    border: 1px solid #ddd; 
+    padding: 10px 0; 
+  }
+  .thanhmenu{
+    margin-top: 8px;
+    margin-left: -40px;
+  }
+  .header-left a{
+    top:5px;
+    padding-left: 55px;
+  }
+  .header-right input {
+    display: none; /* Ẩn input khi trong chế độ di động */
+  }
+
+  .header-left.hidden {
+    display: none; /* Giữ ẩn khi không cần hiển thị */
+  }
+
+  .header-left.visible {
+    display: flex; /* Hiển thị menu khi class 'visible' được thêm vào */
+  }
+  #search-mobile{
+    top:15px; 
+    display: block;
+    margin-left: 50px;
+    border-radius: 15px;
+    width: 300px;
+  }
+ 
+}
+@media (max-width:576px) {
+  .thanhmenu{
+    position: relative;
+   right: 120px;
+  margin-top: 15px;
+  }
+  .menu button{
+    position: relative;
+   right: 80px;
+  }
+  .header-logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+  .header-logo a{
+   position: relative;
+   left: -104px;
+  top:8px;
+     color: #e50914;
+     text-decoration: none;
+   }
+   .header-left{
+    margin-left:0px !important;
+    position: absolute; 
+    top: 60px; 
+    left: 0;
+    padding-left: 10px !important;
+   }
+   .header-right{
+    position: relative;
+   left: -60px;
+   bottom: 10px;
+   }
+   .header-left a{
+    top:5px;
+   padding-left: 0;
+  }
+  #search-mobile{
+    margin-left: 1px;
+  }
+  #menukkk{
+    height: 300px;
+  }
+}
+
+.dropdown{
+position: relative;
+
+color: #6e84a3;
+    font-size: 15px;
+    font-weight: 400;
+}
+.profile-dropdown {
+  position: absolute;
+  top:45px;
+  right: 70px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 100;
+}
+
+.profile-dropdown a,
+.profile-dropdown div {
+  display: block;
+  padding: 8px 0px;
+  color: #6e84a3;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.profile-dropdown a:hover,
+.profile-dropdown div:hover {
+  color: #333;
+  cursor: pointer;
+}
+.timkiemrap{
+  display: flex;
+}
+.profile-menu-container {
+  position: relative;
+  cursor: pointer;
+}
+@media (max-width:480px) {
+  .profile-dropdown{
+  position: absolute;
+left: 20px;
+width: 149px !important;
+top:60px;
+font-size: 10px;
+  }
+   .thanhmenu{
+    margin-left: 20px;
+   }
+  
+}
+
+/* Container Modal */
+.timkiemrap {
+  display: flex;
+ 
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* Input Tìm Rạp */
+.timkiemrap input {
+  width: 100%;
+  max-width: 200px; /* Đảm bảo độ rộng hợp lý */
+  padding: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.timkiemrap input:focus {
+  border-color: #4f8df7; /* Màu border khi input được focus */
+  outline: none;
+}
+
+/* Select Khu Vực */
+.timkiemrap select {
+  width: 100%;
+  max-width: 220px; /* Đảm bảo độ rộng hợp lý */
+  padding: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.timkiemrap select:focus {
+  border-color: #4f8df7; /* Màu border khi select được focus */
+  outline: none;
+}
+
+/* Danh sách Rạp */
+.cinemas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 300px; /* Giới hạn chiều cao để có thể scroll */
+  overflow-y: auto;
+}
+
+.cinemas-list a {
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cinemas-list a:hover {
+  background-color: #4f8df7; /* Màu nền khi hover */
+  color: white; /* Màu chữ khi hover */
+}
+
+/* Thiết lập cho Modal */
+.ant-modal-body {
+  padding: 20px;
+}
+
+.ant-modal-close-x {
+  color: #000; /* Màu đóng */
+  font-size: 20px;
+}
+
+.ant-modal-header {
+  border-bottom: 1px solid #ddd;
+}
+ 

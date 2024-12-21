@@ -1,0 +1,264 @@
+.rap-container {
+    background-color: #f8f9fb;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .rap-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 190px;
+  }
+  
+  .rap-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .rap-chi-tiet {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .rap-ten {
+    font-size: 24px;
+    margin: 0;
+    color: #222;
+  }
+  
+  .rap-dia-chi {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .rap-hanh-dong {
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .hanh-dong-item:hover {
+    text-decoration: underline;
+  }
+  
+  .rap-mo-ta {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    margin-left: 190px;
+  }
+
+  
+  .ngay-item {
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .ngay-item.hoat-dong {
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  .lich-phim {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .phim-item {
+    width: 100%; /* Thay vì chiều rộng cố định */
+  max-width: 735px; /* Giữ giới hạn chiều rộng tối đa */
+  display: flex;
+  flex-wrap: wrap; /* Đảm bảo xuống dòng khi nội dung dài */
+  align-items: center;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-left: 190px;
+  }
+  
+  .phim-anh {
+    width: 100px;
+    height: 140px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .phim-chi-tiet {
+    flex: 1;
+  }
+  
+  .phim-chi-tiet h3 {
+    font-size: 16px;
+    color: #333;
+    font-weight:600;
+  }
+  
+  .phim-phu {
+    font-size: 14px;
+    color: #666;
+  }
+  .phim-ngon-ngu{
+    margin-top: -10px;
+  }
+  .phim-thoi-gian {
+    display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Cho phép xuống dòng khi chiều rộng bị giới hạn */
+  max-width: 100%; 
+  }
+  
+  .thoi-gian-item {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    background-color: #f5f5f5;
+  }
+  
+  .thoi-gian-item:hover {
+    background-color: #c6ced1;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .gio {
+    color: #333;
+    font-size: 14px;
+  
+  }
+  
+  .gia {
+    font-size: 12px;
+    color: #666;
+  }
+  .gio:hover {
+   color: white;
+  }
+  .thong-baooo {
+    background-color: #fbc02d; /* Màu vàng như hình */
+    color: #2c3e50; /* Màu chữ xám đậm */
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-top: 15px; /* Khoảng cách với calendar */
+    text-align: left;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 735px;
+    margin-left: 190px;
+  }
+  
+  /* Mobile First Design */
+
+/* iPad Mini (768px trở xuống) */
+@media screen and (max-width: 768px) {
+    .rap-container {
+      padding: 10px;
+    }
+  
+    .rap-header {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .rap-logo {
+      margin-bottom: 10px;
+    }
+  
+    .rap-mo-ta {
+      margin-left: 0;
+      text-align: center;
+      font-size: 12px;
+    }
+  
+    .lich-phim {
+      gap: 10px;
+    }
+  
+    .phim-item {
+      margin-left: 0;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .phim-anh {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .phim-thoi-gian {
+      justify-content: center;
+    }
+  
+    .thong-baooo {
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+  /* Điện thoại (576px trở xuống) */
+  @media screen and (max-width: 576px) {
+    .rap-header {
+      gap: 15px;
+    }
+  
+    .calendar-custom {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .date-custom {
+      width: 70px;
+      font-size: 12px;
+      padding: 5px;
+    }
+  
+    .thoi-gian-item {
+      width: 60px;
+      height: 40px;
+      font-size: 12px;
+    }
+  
+    .phim-item {
+      padding: 10px;
+    }
+  
+    .phim-anh {
+      width: 80px;
+      height: 120px;
+    }
+  
+    .phim-chi-tiet h3 {
+      font-size: 14px;
+    }
+  
+    .phim-phu {
+      font-size: 12px;
+    }
+  
+    .thong-baooo {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+  }
+  

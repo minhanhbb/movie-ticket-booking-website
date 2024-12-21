@@ -1,0 +1,95 @@
+.thanh-tien-trinh {
+    display: flex;
+    justify-content: center; /* Canh giữa tất cả các bước */
+    align-items: center;
+    padding: 5px 0; /* Giảm padding trên và dưới */
+    border-bottom: 1px solid #E0E0E0; /* Đường viền dưới nhạt */
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+.buoc.active .label {
+    color: #FF5252; /* Màu đỏ cho nhãn của bước đang hoạt động */
+}
+.buoc.active svg{
+    color: #FF5252;
+}
+.separator {
+
+    margin: 0 5px; /* Giảm khoảng cách giữa các icon */
+    font-size: 50px; /* Giảm kích thước dấu ">" */
+    color: #ccc;
+    font-weight: lighter; /* hoặc font-weight: 100; */
+    font-size: 2.5em; /* Giảm kích thước để mũi tên nhỏ hơn */ 
+}
+
+.buoc {
+    flex: none;
+    text-align: center;
+    position: relative;
+    font-size: 12px; /* Giảm kích thước chữ */
+    color: #B0BEC5; /* Màu xám nhạt cho các bước chưa chọn */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 98px; /* Giảm khoảng cách giữa các bước */
+}
+
+.buoc .icon {
+    width: 20px; /* Giảm chiều rộng của icon */
+    height: 20px; /* Giảm chiều cao của icon */
+    margin-bottom: 3px; /* Giảm khoảng cách giữa icon và label */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px; /* Đảm bảo icon nằm giữa */
+}
+
+.buoc.active .icon {
+    color: #FF5252; /* Màu đỏ cho icon được chọn */
+}
+
+.buoc.active .label {
+    color: #FF5252; /* Màu đỏ cho bước được chọn */
+}
+
+.buoc::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -50%; /* Đặt đường kẻ sau icon */
+    width: 100%;
+    height: 1px;
+    background-color: #faeded; /* Màu xám nhạt */
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.buoc:last-child::after {
+    display: none; /* Ẩn đường kẻ cho bước cuối cùng */
+}
+@media (max-width: 768px) {
+    .thanh-tien-trinh {
+        flex-wrap: nowrap; /* Ensure steps are horizontal */
+        overflow-x: auto; /* Allow horizontal scrolling */
+    }
+
+    .buoc {
+        margin: 0 10px; /* Adjust space for smaller screens */
+    }
+
+    .separator {
+        font-size: 1.5em; /* Smaller arrow on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .buoc {
+        font-size: 10px; /* Smaller font size for very small screens */
+        margin: 0 5px; /* Further reduce spacing */
+    }
+
+    .separator {
+        font-size: 1.2em; /* Further reduce arrow size */
+    }
+}

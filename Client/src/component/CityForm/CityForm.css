@@ -1,0 +1,100 @@
+/* Bao quanh form */
+.city-form-wrapper {
+    position: fixed; /* Đảm bảo bao phủ toàn bộ màn hình */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end; /* Đặt form vào phía bên phải */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    z-index: 999; /* Đảm bảo form và overlay luôn nằm trên các phần tử khác */
+  }
+  
+  /* Lớp phủ tối, làm mờ toàn bộ màn hình ngoài CityForm */
+  .city-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Làm mờ màn hình ngoài */
+    z-index: 1000;
+    cursor: pointer; /* Để người dùng có thể click để đóng form */
+  }
+  
+  /* Container của form */
+  .city-form-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* Đảm bảo nằm trên overlay */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  } 
+  
+  /* Form chính */
+  .city-form {
+    position: relative;
+    z-index: 1001;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  /* Các danh sách thành phố */
+  .city-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Các mục trong danh sách */
+  .city-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .city-name {
+    font-weight: bold;
+  }
+  
+  .city-theaters {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  /* Ô tìm kiếm */
+.search-box {
+    position: relative; /* Để biểu tượng có thể được đặt vào vị trí chính xác trong ô tìm kiếm */
+    width: 100%; /* Chiếm hết chiều rộng của ô tìm kiếm */
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+
+    border-radius: 5px;
+  }
+  
+  /* Biểu tượng tìm kiếm */
+  .search-icon {
+    position: absolute;
+    right: 10px; /* Đặt biểu tượng ở phía bên phải của ô tìm kiếm */
+    font-size: 18px;
+    color: #888;
+    margin-right: 40px;
+  }
+  
+  /* Input tìm kiếm */
+  .search-box input {
+    width: 100%; /* Chiếm hết chiều rộng còn lại trong ô tìm kiếm */
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+   
+  }
+  

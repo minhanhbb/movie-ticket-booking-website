@@ -1,0 +1,183 @@
+/* FilmNews.css */
+
+/* Overlay loading */
+.overlay-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff; /* Làm mờ nền */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Đảm bảo overlay ở trên cùng */
+  }
+  
+  /* Nội dung trang khi loading */
+  .Contentseach {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  
+  
+.text-white {
+    color: #6c757d;
+}
+
+.div-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.div-item .img {
+    flex: 1;
+}
+
+.div-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.content-new {
+    flex: 2;
+    margin-left: 15px;
+}
+.content-new a{
+    text-decoration: none;
+}
+.content-new h3 {
+    font-size: .9375rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.content-new p {
+    font-size: 15px;
+    margin: 5px 0 0 0;
+               
+    
+}
+.tintucmoi .div-item .content-new p {
+    font-size: 14px;
+    color: #666;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Hiển thị tối đa 2 dòng */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5; /* Tăng khoảng cách giữa các dòng */
+    max-width: 100%; /* Đảm bảo văn bản không tràn ra ngoài */
+    
+  }
+.chuyenmuc {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid #edf2f9;
+    background-color: #fff;
+
+   padding-top: -500px;
+   height: 330px;
+}
+
+.chuyenmuc h3 {
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 18px;
+    height: 50px;
+background: #edf2f9;
+width: 439px;
+right: 20px;
+top:-20px;
+padding-top: 12px;
+padding-left: 12px;
+font-weight: 600px;
+}
+
+.noidung {
+  
+    margin-top: -30px;
+    margin-bottom: 45px;
+    border-bottom: 1px solid #e3ebf6;
+    padding-bottom: 15px;
+}
+.noidung a{
+    text-decoration: none;
+    color: #333;
+}
+.noidung h4 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+.noidung h4:hover{
+    cursor: pointer;
+}
+
+.noidung p {
+    margin: 5px 0 0 0;
+    color: #6c757d;
+    
+}
+.tintucmoi{
+    background: #fff;
+    margin-top: 20px;
+    width: 602px;
+    margin-left: 100px;
+    border: 1px solid #edf2f9;
+    background-color: #fff;
+ 
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.Contentseach{
+    background-color: #fff;
+}
+.boxcha-4{
+    gap:30px
+}
+.tintucmoi h2{
+    font-size: 18px;
+    height: 50px;
+background: #edf2f9;
+    width: 601px;
+ position: relative;
+right: 12px;
+padding-top: 15px;
+padding-left: 20px;
+border-radius: 5px 5px 0 0;
+}
+
+@media (max-width:768px){
+ .tintucmoi{
+    margin-left: 90px;
+ }
+ .chuyenmuc{
+    margin-left: 90px ;
+    width: 600px;
+ }
+ .chuyenmuc h3{
+    width: 600px;
+ }
+}
+@media (max-width:576px ) {
+    .tintucmoi h2{
+        width: 390px;
+    }
+    .tintucmoi{
+        position: relative;
+ width: 90%;
+     right: 70px
+        
+    }
+    .chuyenmuc{
+        width: 390px;
+   margin-left: 20px;
+    }
+    .chuyenmuc h3 {
+        width: 390px !important;
+    }
+    
+}

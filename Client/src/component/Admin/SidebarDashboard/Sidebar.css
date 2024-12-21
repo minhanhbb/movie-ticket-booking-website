@@ -1,0 +1,120 @@
+.sidebar {
+  width: 270px;
+  background-color: #ffffff; /* Màu nền trắng */
+  color: #2c3e50; /* Màu chữ tối nhẹ */
+  position: fixed; /* Sidebar cố định */
+  top: 0;
+  left: 0;
+  height: 100vh; /* Đảm bảo chiều cao đầy đủ */
+  padding: 20px 15px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  overflow-y: auto; /* Cuộn nếu nội dung quá dài */
+}
+
+.container-wrapper {
+  margin-left: 230px; /* Đẩy nội dung chính sang bên phải */
+  padding: 20px; /* Tạo khoảng cách giữa nội dung và các cạnh */
+  transition: margin-left 0.3s ease-in-out; /* Hiệu ứng chuyển động */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: #2c3e50; /* Màu chữ tối nhẹ */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  color: #2b6c47; /* Màu chữ khi hover */
+}
+
+.submenu {
+  display: none;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.submenu.open {
+  display: block;
+  border-left: 4px solid #006064; /* Màu viền submenu khi mở */
+}
+
+.sidebar ul li span:hover {
+  color: #0a9948; /* Màu chữ thay đổi khi hover */
+}
+
+.sidebar ul li span {
+  margin-left: -20px;
+  display: flex;
+  justify-content: space-between; /* Căn giữa nội dung và mũi tên */
+  align-items: center;
+  cursor: pointer;
+  color: #2c3e50; /* Màu chữ */
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li span svg {
+  margin-right: -40px; /* Khoảng cách từ mũi tên đến lề phải */
+  font-size: 14px; /* Điều chỉnh kích thước mũi tên nếu cần */
+  transition: transform 0.3s ease;
+}
+
+.sidebar ul li a svg {
+  margin-right: 10px; /* Khoảng cách giữa icon và chữ */
+}
+
+.submenu.open span svg {
+  transform: rotate(180deg); /* Xoay mũi tên khi mở submenu */
+}
+
+.header-logoo {
+  color: #2c3e50; /* Màu chữ header */
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.header-logoo a {
+  margin-left: 20px;
+  font-size: 24px; /* Kích thước chữ tổng thể */
+  font-weight: bold; /* Làm đậm chữ */
+  color: #ee5407; /* Màu chữ nổi bật */
+  text-transform: uppercase; /* Chuyển thành in hoa */
+  letter-spacing: 2px; /* Giãn cách giữa các chữ */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+  font-family: "Cerebri Sans", sans-serif; /* Chọn font chữ */
+  display: inline-block;
+  transition: all 0.3s ease; /* Hiệu ứng hover */
+  position: relative;
+  bottom: 5px;
+  text-decoration: none;
+}
+
+.logo-first-letter1 {
+  font-size: 36px; /* Kích thước lớn hơn cho chữ "F" */
+  color: #d02f1d; /* Màu chữ đặc biệt */
+}
+
+.sidebar ul li a.active {
+  padding: 10px;
+  background-color: #006064; /* Màu nền khi chọn */
+  color: #ffffff; /* Màu chữ khi chọn */
+  border-radius: 5px; /* Thêm bo góc nếu muốn */
+}

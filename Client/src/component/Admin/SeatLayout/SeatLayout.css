@@ -1,0 +1,46 @@
+.seat-matrix .seat-R {
+    background-color: #f1f1f1; /* Ghế thường */
+}
+
+.seat-matrix .seat-V {
+    background-color: #ffcc00; /* Ghế VIP */
+}
+
+.seat-matrix .seat-C {
+    background-color: #ff66b2; /* Ghế cặp đôi */
+}
+
+.seat-matrix .seat-+ {
+    background-color: #d9d9d9; /* Ghế trống */
+    color: transparent; /* Ẩn ký tự */
+}
+
+.seat-matrix td {
+    padding: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.seat-matrix .seat-R div, 
+.seat-matrix .seat-V div, 
+.seat-matrix .seat-C div, 
+.seat-matrix .seat-+ div {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+.seat-selected {
+    background-color: #007bff; /* Màu nền khi ghế được chọn */
+    color: white;
+}
+.seat-R {
+    background-color: #e9ecef; /* Màu nền cho ghế thường */
+}
+.seat-V {
+    background-color: #f8f9fa; /* Màu nền cho ghế VIP */
+}
+.seat-C {
+    background-color: #d1ecf1; /* Màu nền cho ghế cặp đôi */
+}

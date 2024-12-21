@@ -1,0 +1,9 @@
+.websitesettingsmanager {
+    display: flex;
+}
+
+.websitesettingsadmin {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}

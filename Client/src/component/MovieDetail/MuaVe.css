@@ -1,0 +1,239 @@
+/* CSS cho Container lịch chiếu */
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f7f9fc;
+    border-radius: 12px;
+    width: 100vw; /* Đặt chiều rộng là 100% của khung nhìn */
+    margin-left: -20px; /* Loại bỏ khoảng trống hai bên nếu có */
+    box-sizing: border-box; /* Đảm bảo padding không làm ảnh hưởng tới kích thước của container */
+}
+
+.lich-chieu .calendar-container {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.row-custom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid rgb(205, 197, 197);
+    width: 730px;
+    height: 75px;
+    margin-bottom: 30px;
+    margin-left: 190px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.city-select-custom,
+.format-select-custom {
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    appearance: none; /* Bỏ mũi tên mặc định của select */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng cho select */
+}
+
+.city-select-custom {
+    width: 710px;
+    height: 40px;
+}
+
+.format-select-custom {
+    width: 335px;
+    height: 40px;
+}
+
+.city-select-custom:focus,
+.format-select-custom:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Calendar */
+.calendar-custom {
+    display: flex;
+    padding: 10px 0;
+    background-color: #e4f1fa; /* Thay đổi màu nền của calendar */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Thêm bóng cho calendar */
+    width: 730px;
+    margin-left: 190px;
+    gap: 0; /* Không có khoảng cách giữa các phần tử date-custom */
+}
+
+.date-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Chia đều không gian */
+    padding: 15px; /* Tăng padding để cải thiện giao diện */
+    color: #555;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    font-size: 16px; /* Tăng kích thước chữ */
+    background-color: #f8f9fc; /* Màu nền nhẹ cho ngày */
+}
+
+.date-custom.active {
+    background-color: #cce5ff; /* Màu nền cho ngày đang chọn */
+    color: #0056b3; /* Màu chữ cho ngày đang chọn */
+}
+
+.date-custom:hover {
+    background-color: #b0d4ff; /* Màu nền khi hover */
+    color: #0056b3; /* Màu chữ khi hover */
+}
+
+.date-custom span {
+    font-weight: bold;
+    font-size: 18px; /* Tăng kích thước chữ cho ngày */
+    margin-bottom: 5px;
+}
+
+.date-custom small {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Điều chỉnh khoảng cách giữa các ô ngày */
+.calendar-custom .date-custom:not(:last-child) {
+    margin-right: 0; /* Không có khoảng cách giữa các ngày */
+}
+
+/* Điều chỉnh padding và khoảng cách tổng thể */
+.calendar-custom {
+    padding: 0;
+    gap: 0; /* Không có khoảng cách giữa các date-custom */
+}
+.city-select-custom {
+    margin-top: 17px;
+    margin-left: 10px;
+}
+.format-select-custom {
+    margin-top: 17px;
+    margin-right: 10px;
+}
+input,
+select {
+    padding: 0;
+}
+
+/* Danh sách rạp */
+.cinema-list {
+    display: flex;
+    flex-direction: column;
+    width: 735px;
+    margin-left: 190px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    border-radius: 12px; /* Bo góc */
+    overflow: hidden; /* Ẩn các phần tử thừa */
+}
+
+.cinema-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; /* Khoảng cách bên trong */
+    background-color: #e9f5ff; /* Màu nền của item rạp */
+    border-bottom: 1px solid #e2e8f0; /* Đường viền dưới */
+    height: 70px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Hiệu ứng chuyển màu và phóng to */
+}
+
+
+.cinema-item:last-child {
+    border-bottom: none; /* Xóa đường viền dưới cho item cuối */
+}
+
+.cinema-logo img {
+    width: 50px; /* Kích thước logo */
+    height: 50px; /* Cân bằng kích thước logo */
+    border-radius: 50%; /* Bo tròn logo */
+    object-fit: cover; /* Giữ tỷ lệ của logo */
+    
+}
+
+.cinema-info {
+    flex-grow: 1;
+    margin-left: 20px; /* Khoảng cách giữa logo và thông tin rạp */
+}
+
+.cinema-info .cinema-name {
+    padding-top:45px;
+    font-size: .9375rem;
+    font-weight: 500;
+    color: #12263f !important;
+    transition: color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.cinema-info .cinema-branches {
+position: relative;
+bottom: 20px;
+    font-size: 14px; /* Kích thước chữ số rạp */
+    color: #666; /* Màu chữ cho số rạp */
+}
+
+.cinema-arrow {
+    padding-right: 20px;
+    font-size: 24px; /* Kích thước mũi tên */
+    color: #888; /* Màu chữ mũi tên */
+    transition: color 0.3s; /* Hiệu ứng chuyển màu cho mũi tên */
+}
+
+
+
+.sub-cinema-list {
+    background-color: #f0f4f8; /* Màu nền cho danh sách rạp con */
+    color: #12263f !important;
+    font-weight: 400 !important;
+ 
+    font-size: .9375rem;
+  padding-left: 20px;
+  padding-top: 20px;
+    border-top: 1px solid #e2e8f0; /* Đường viền trên để tách biệt */
+}
+
+
+.sub-cinema-item {
+    padding: 10px; /* Padding cho rạp con */
+    background-color: #ffffff; /* Màu nền của item rạp con */
+    border-bottom: 1px solid #e2e8f0; /* Đường viền dưới */
+    cursor: pointer; /* Con trỏ khi hover */
+    transition: background-color 0.3s, transform 0.2s; /* Hiệu ứng chuyển màu và phóng to */
+}
+
+.sub-cinema-item:last-child {
+    border-bottom: none; /* Xóa đường viền dưới cho item cuối */
+}
+
+
+.cinema-arrow {
+    font-size: 20px; /* Kích thước chữ nhỏ hơn */
+    color: #95aac9 !important;; /* Màu chữ cho mũi tên */
+    font-weight: 300; /* Làm cho nét chữ nhẹ hơn */
+    transition: transform 0.3s; /* Hiệu ứng chuyển động khi hover */
+}
+.cinema-item {
+
+
+    background-color: #ecedf3; /* Màu nền của item rạp */
+   
+    
+
+}
+
+.cinema-item.selected {
+    background-color: rgb(218, 226, 240); /* Màu nền cho rạp được chọn */
+    color: white; /* Thay đổi màu chữ cho dễ đọc */
+}
+

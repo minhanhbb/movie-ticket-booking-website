@@ -1,0 +1,154 @@
+.user-dashboard {
+    padding: 20px;
+    background: rgb(229, 240, 242); /* Nền xanh nhạt */
+    min-height: 170vh;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-dashboard h2 {
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+    color: #262626;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.search-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns search input to the right */
+    margin-bottom: 10px; /* Adds spacing below the search input */
+}
+
+.search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.add-user-btn {
+    padding: 5px 20px;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.add-user-btn:hover {
+    background-color: #e67e22;
+}
+
+.table-container2 {
+    width: 100%;
+    max-width: 1300px;
+    overflow-x: auto;
+    border-radius: 8px;
+    background-color: #f4f6f7; /* Background sáng hơn */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Nhẹ hơn */
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    color: #006064;
+}
+
+.user-table th {
+    background-color: #e0f7fa;
+    color: #00796b;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+    border-bottom: 1px solid #b2ebf2;
+}
+
+.user-table td {
+    padding: 10px;
+    background-color: #ffffff;
+    color: #00796b;
+    border-bottom: 1px solid #b2ebf2;
+    text-align: center;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f1f8e9;
+}
+
+.user-table tbody tr:hover {
+    background-color: #b2ebf2;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.action-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #00796b;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+.edit-btn{
+    text-decoration: none;
+}
+
+.edit-btn:hover {
+    color: #f1c40f;
+}
+
+.delete-btn:hover {
+    color: #e74c3c;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.page-btn {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.page-btn.active {
+    background-color: #00796b;
+    color: white;
+    cursor: default;
+}
+
+.prev-btn, .next-btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 5px;
+    color: #28a745;
+    transition: color 0.3s ease;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    color: #218838;
+}

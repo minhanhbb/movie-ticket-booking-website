@@ -1,0 +1,343 @@
+/* Cấu trúc chính của trang OrderDetail */
+
+.order-detail {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    padding: 20px;
+    /* Giới hạn chiều rộng tối đa */
+}
+
+.order-detail h2 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.order-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.order-main {
+    margin-right: 20px;
+    width: 700px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-sidebar {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.trangthaive h3 {
+    padding-left: 5px;
+}
+
+/* Tăng cường kiểu bảng thông tin */
+/* Cấu trúc bảng chính */
+.order-table {
+    table-layout: fixed; /* Đảm bảo các cột cố định kích thước */
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.order-table th {
+    background-color: #2d6a4f;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Kích thước các cột */
+.order-table th:nth-child(1), /* Cột PHIM */
+.order-table td:nth-child(1) {
+    width: 20%; /* Giảm kích thước cột phim */
+    text-align: center;
+ 
+}
+
+.order-table th:nth-child(2), /* Cột SUẤT CHIẾU */
+.order-table td:nth-child(2) {
+    width: 25%; /* Tăng cột suất chiếu */
+    text-align: center;
+}
+
+.order-table th:nth-child(3), /* Cột COMBO */
+.order-table td:nth-child(3) {
+    width: 30%; /* Cột combo lớn hơn */
+    text-align: center;
+}
+
+.order-table th:nth-child(4), /* Cột GHẾ */
+.order-table td:nth-child(4) {
+    width: 25%; /* Cột ghế vừa phải */
+    text-align: center;
+}
+
+/* Kiểu cho ảnh phim */
+.order-table img {
+    width: 70px; /* Giảm kích thước ảnh */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Hàng dữ liệu */
+.order-table td {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+/* Hiệu ứng hover */
+.order-table tr:hover {
+
+    transition: background-color 0.3s ease;
+}
+
+
+/* Phần cột phải - Sidebar */
+
+.ticket-status {
+    margin-left: 10px;
+    width: 340px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-status h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ticket-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.ticket-content img {
+    width: 150px;
+    margin-bottom: 10px;
+    /* Khoảng cách giữa hình ảnh và nút */
+}
+
+.ticket-content Button {
+    margin-top: 10px;
+    /* Điều chỉnh khoảng cách nếu cần */
+}
+
+.ticket-status p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ticket-status .ant-btn {
+    margin-left: 20px;
+    background-color: #0c8460;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.ticket-status .ant-btn:hover {
+    background-color: #004c99;
+}
+
+.tongtien {
+    margin-left: 400px;
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 350px;
+  }
+  
+  .tongtien p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .total-amountt {
+    font-size: 18px;
+    font-weight: bold;
+    text-align:left;
+  
+  
+  }
+  
+.barcode-seat {
+    display: flex;
+    flex-direction: column; /* Dọc toàn bộ container */
+    gap: 10px; /* Khoảng cách giữa các ghế */
+    margin: 20px 0;
+  }
+  
+  .seat-barcode-container {
+    display: flex;
+    align-items: center; /* Canh giữa theo chiều dọc */
+    justify-content: flex-start; /* Căn trái */
+    gap: 15px; /* Khoảng cách giữa chữ và barcode */
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .seat-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    min-width: 100px; /* Giữ label thẳng hàng */
+  }
+  
+  .barcode-img {
+    height: 50px; /* Chiều cao cho barcode */
+    width: 200px; /* Chiều rộng đủ để quét */
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+
+
+/* Kiểu cho các trạng thái của vé */
+
+.ticket-status {
+    margin-left: 4px;
+}
+
+.status-pain {
+    color: green;
+}
+
+.status-confirmed {
+    color: orange;
+}
+
+.status-pending {
+    color: blue;
+}
+
+.status-default {
+    color: gray;
+}
+
+.user-info {
+    background-color: #f9f9f9;
+    /* Màu nền nhạt */
+    padding: 20px;
+    border-radius: 10px;
+    /* Bo góc mềm mại */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Bóng đổ nhẹ */
+    text-align: center;
+    /* Căn giữa nội dung */
+    width: 340px;
+    /* Giới hạn chiều rộng tối đa */
+    margin: 0 auto;
+    /* Căn giữa trong container */
+}
+
+.user-info h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.user-info img {
+    width: 100px;
+    /* Kích thước avatar */
+    height: 100px;
+    border-radius: 50%;
+    /* Bo tròn hình ảnh */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.user-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+    /* Màu chữ xám nhạt */
+}
+
+.payment-info {
+    margin-left: 10px;
+    width: 340px;
+    background-color: #fff;
+    /* Màu nền trắng */
+    padding: 20px;
+    border-radius: 10px;
+    /* Bo góc mềm mại */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Bóng đổ nhẹ */
+    margin-top: 10px;
+    /* Khoảng cách giữa các phần */
+}
+
+.payment-info h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    /* Màu chữ đậm cho tiêu đề */
+    margin-bottom: 15px;
+}
+
+.payment-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+    /* Màu chữ xám nhạt */
+}
+
+.payment-info p:last-child {
+    font-weight: bold;
+    /* Đậm cho phần tổng tiền */
+    color: #d9534f;
+    /* Màu đỏ cho phần tổng tiền */
+}
+
+@media (max-width: 768px) {
+    .order-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .order-main,
+    .order-sidebar {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,179 @@
+/* Main header container */
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #ffffff;
+    padding: 15px 30px;
+    color: #004d40; /* Màu xanh đậm cho chữ */
+}
+
+/* Title styling */
+.header1 h1 {
+    font-size: 30px;
+    margin: 0;
+    color: #004d40; /* Màu xanh đậm cho tiêu đề */
+}
+
+/* Header actions container */
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+/* Icons container styling */
+.icons-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* Icon styling */
+.icon {
+    position: relative;
+    margin: 0 15px;
+    font-size: 1.8rem; /* Make all icons the same size */
+    color: #004d40; /* Màu xanh đậm cho icon */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Profile picture icon styling */
+.profile-pic {
+    font-size: 1.8rem; /* Ensure it's the same size as the other icons */
+    color: #004d40; /* Màu xanh đậm cho biểu tượng người dùng */
+}
+
+/* Notification badge styling */
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #e74c3c; /* Màu đỏ cho thông báo */
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+}
+
+/* Icon hover effect */
+
+
+/* Search container */
+.search-container1 {
+    margin-left: 6px;
+}
+
+.search-container input {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+    background-color: #fff; /* Nền xanh nhạt cho ô tìm kiếm */
+    color: #004d40; /* Màu chữ xanh đậm */
+    outline: none;
+    font-size: 0.9rem;
+    border: 1px solid rgb(63, 176, 153);
+}
+
+.search-container input::placeholder {
+    color: #00796b; /* Màu placeholder xanh đậm */
+}
+
+/* Search box for light mode */
+.light-mode .search-container input {
+    background-color: #e0f7fa; /* Nền xanh nhạt cho chế độ sáng */
+    color: #00796b; /* Màu chữ xanh đậm */
+}
+
+.light-mode .search-container input::placeholder {
+    color: #004d40; /* Màu placeholder khi ở chế độ sáng */
+}
+
+/* Profile dropdown styles */
+.profile-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 250px;
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #3498db;
+    transition: transform 0.3s ease;
+}
+
+.profile-avatar:hover {
+    transform: scale(1.05);
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.profile-email {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin: 0;
+}
+
+/* Logout button styles */
+.logout-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header1 h1 {
+        font-size: 18px;
+    }
+
+    .icon {
+      display: none;
+    }
+
+    .profile-pic {
+        font-size: 1.4rem;
+    }
+}

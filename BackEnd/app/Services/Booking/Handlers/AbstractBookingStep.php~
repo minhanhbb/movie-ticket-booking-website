@@ -1,0 +1,45 @@
+<?php
+
+namespace App\Services\Booking\Handlers;
+
+use App\Services\Booking\Contracts\InterfaceBooking;
+use Illuminate\Http\Request;
+
+abstract class AbstractBookingStep implements InterfaceBooking
+{
+    protected ?InterfaceBooking $next = null;
+
+    public function setNext(InterfaceBooking $handle): InterfaceBooking
+    {
+        $this->next = $handle;
+        return $handle;
+    }
+
+    public function handle(Request $request): ?string
+    {
+        $result = $this->process($request);
+
+        // Nếu có lỗi, trả về ngay lập tức
+//        if (isset($result->errors) && !empty($result->errors)) {
+//            return $result;
+//        }
+        if (is_string($result)) {
+            return $result;
+        }
+
+        // Nếu không có lỗi, tiếp tục gọi bước tiếp theo nếu có
+        $nextResult = $this->next ? $this->next->handle($request) : null;
+
+        // Nếu không có bước tiếp theo, trả về kết quả hiện tại (hoặc khi không có bước tiếp theo)
+        return  null;
+    }
+
+    // Gọi hàm handle của bước tiếp theo
+
+    /**
+     * Phương thức cụ thể của từng bước xử lý
+     * @param Request $request
+     * @return ?array
+     */
+    abstract protected function process(Request $request): ?string;
+}

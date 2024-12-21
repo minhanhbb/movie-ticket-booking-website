@@ -1,0 +1,149 @@
+/* Existing styles */
+.news-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.main-news {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 60%;
+  margin-left: 120px;
+}
+
+.main-news-image img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.user-style{
+  color: orangered !important;
+}
+
+.main-news-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.main-news-content .category {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.main-news-content .description {
+  font-size: 16px;
+  color: #555;
+}
+.main-news-content .PhimHot{
+  color: rgb(234, 41, 41);
+  
+}
+.related-news {
+  width: 22.5%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+.related-news ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.related-news ul li {
+  margin-bottom: 20px;
+}
+
+.related-news ul li a {
+  text-decoration: none;
+
+  color: #007bff;
+}
+.related-news-item .title{
+  color: #12263f;
+  font-size: 15px;
+ 
+  font-weight :600
+}
+.related-news-item a{
+  text-decoration: none;
+}
+.related-news ul li a:hover {
+  text-decoration: underline;
+}
+
+.related-news ul li .author {
+  display: block;
+  color: #888;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.author {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+  font-size: 14px;
+}
+
+.related-news-item {
+  padding: 10px;
+  border-radius: 8px;
+  text-align: left;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.related-news-item a {
+  text-decoration: none;
+  color: #12263f;
+  font-size: 15px;
+
+  font-weight: 400
+}
+
+.related-news-item span {
+  color: #888;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .news-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-news {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .related-news {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .related-news ul li {
+    margin-bottom: 10px;
+  }
+
+  .main-news-content h2 {
+    font-size: 20px;
+  }
+
+  .main-news-content .category {
+    font-size: 12px;
+  }
+
+  .main-news-content .description {
+    font-size: 14px;
+  }
+}

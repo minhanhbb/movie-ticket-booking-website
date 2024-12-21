@@ -1,0 +1,9 @@
+.showtimesmanager {
+    display: flex;
+}
+
+.showtimesadmin {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}

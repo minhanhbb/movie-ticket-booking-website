@@ -1,0 +1,166 @@
+/* Container to center the form */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Chỉnh giữa hai phần form và hình ảnh */
+  padding: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 20px; /* Tăng khoảng cách giữa form và hình ảnh */
+  
+ 
+}
+
+/* Form styling */
+.login-form {
+  width: 50%;
+  padding-bottom: 50px;
+}
+
+/* Form heading styling */
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  color:#0f0f0f !important;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Forgot password link styling */
+.forgot-password {
+  display: block;
+  text-align: right;
+  margin-top: 5px;
+  color: #007bff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Submit button styling */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0b203b !important;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-button:hover {
+  background-color: #081930;
+}
+
+/* Register link styling */
+.register-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Image container styling */
+.login-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.login-image img {
+  width: 250px;
+  height: auto;
+}
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column; /* Stack form and image container vertically */
+    align-items: center; /* Center align items */
+    gap: 30px; /* Increase gap between form and image container */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .login-form {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .login-image {
+    width: 100%; /* Full width on smaller screens */
+    text-align: center; /* Center align image */
+  }
+
+  .login-image img {
+    width: 200px; /* Adjust image size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form h2 {
+    font-size: 32px; /* Smaller font size for headings */
+  }
+
+  .form-group label {
+    font-size: 12px; /* Smaller font size for labels */
+  }
+
+  .form-group input {
+    padding: 10px; /* Smaller padding for inputs */
+    font-size: 14px; /* Smaller font size for inputs */
+  }
+
+  .login-button {
+    font-size: 14px; /* Smaller font size for button text */
+  }
+}
+.form-group input{
+  background-color: #fff !important;
+}
+.google-login-button{
+  margin-top: 10px;
+  background: red !important;
+}

@@ -1,0 +1,67 @@
+.banner-movies{
+    background-image: url('https://cdn.moveek.com/build/images/tix-banner.ed8b6071.png');
+    background-position: 50% 50%;
+    background-size: cover;
+
+    height: 150px;
+
+}
+.banner-movies{
+    text-align: center;
+    padding-top: 30px;
+    font-family: "Cerebri Sans, sans-serif";
+
+}
+.banner-movies h2{
+    color: #fff;
+   
+}
+
+
+.movelikeone h3{
+text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.move-itemone img{
+    width: 117px;
+    height: 176px;
+    
+}
+.timkiemphim2{
+ 
+    height: 100px;
+    text-align: center;
+    font-size: 20px ;
+}
+.move-itemone h4{
+    font-size: 15px;
+padding-top: 6px;
+margin-bottom: 0;
+color: inherit;
+font-weight: 600;
+font-family: "Cerebri Sans, sans-serif";
+padding-right: 40px;
+}
+.move-itemone-1 p{
+    font-size: 12px;
+    color: #95aac9;
+  
+    
+}
+
+/* Đặt flexbox cho phần chứa các phim */
+.move-itemone {
+    display: flex;
+    justify-content: center; /* Căn giữa mặc định */
+    flex-wrap: wrap; /* Đảm bảo các phim được dàn hàng nếu có nhiều */
+    gap: 0px; /* Khoảng cách giữa các item */
+    padding: 20px 0;
+  }
+  
+  /* Khi có từ 2 phim trở lên, dàn đều chúng */
+
+  
+  
+  

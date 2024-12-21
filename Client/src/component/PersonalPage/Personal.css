@@ -1,0 +1,292 @@
+.main-content{
+  text-align: center;
+  margin-top: 20px;
+/* background-color: #f0f6f7; */
+}
+.acounntone{
+display: flex;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+}
+.avatas{
+  border-color: #fff;
+}
+.avatas img{
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin-left: 20px;
+  bottom: 40px;
+  border-radius: 80px;
+  border-color: #fff;
+}
+.cover{
+  border-radius: 8px;
+}
+
+.nameacount{
+
+  padding-left: 20px;
+  padding-top: 30px;
+
+}
+.nameacount h3{
+  font-size: 30px;
+  font-family: "Cerebri Sans, sans-serif";
+  font-weight: 600px;
+}
+.acounntone{
+  border: 1px solid #edf2f9;
+  border-radius:0 0 .5rem .5rem ;
+  background-clip: border-box;
+  background-color: #fff;
+width: 851px;
+margin-left: 222px;
+box-shadow: 0 .75rem 1.5rem rgba(18,38,63,.03)
+}
+
+.nutlike{
+    border-color: #edf2f9;
+    box-shadow: 0 .75rem 1.5rem rgba(18,38,63,.03);
+    background-color: #fff;
+    border: 1px solid #edf2f9;
+    border-radius:0 0 .5rem .5rem;
+    padding-right: 30px;
+}
+.nutlike span{
+padding-left: 10px;
+font-family: Feather !important;
+color: #00d97e;
+font-weight: 500;
+
+  
+}
+.nobackground {
+  color: #95aac9 !important;
+}
+.item-phim .img img{
+  margin-top: 15px;
+  width: 126px;
+  height: 190px;
+  border-radius: 10px;
+}
+
+.phimyeuthich-container {
+  width: 900px;
+/* Điều chỉnh để phù hợp với banner */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.phimyeuthich {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Hiển thị 4 cột phim trên mỗi hàng */
+  gap: 15px; /* Khoảng cách giữa các mục */
+  padding: 0 10px; /* Lề ngang */
+}
+
+.item-phim .img img {
+  
+  /* Tự động điều chỉnh kích thước theo khung */
+  height: 200px; /* Chiều cao ảnh thu nhỏ */
+  object-fit: cover;
+}
+
+.item-phim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+.rating-2{
+  margin-top: 10px;
+}
+.movie-title1 {
+  display: inline-block; 
+  margin-top: 8px;
+  font-size: 12px; /* Thu nhỏ font chữ */
+  max-width: 100%;
+  font-weight: 500; /* Nhẹ hơn để cân đối */
+  white-space: nowrap; /* Ngăn văn bản xuống dòng */
+  overflow: hidden; /* Ẩn phần văn bản bị tràn */
+  text-overflow: ellipsis; /* Hiển thị dấu ba chấm */
+  min-width: 0;
+}
+
+
+
+.moveslike{
+  margin-top: 16px;
+}
+.moveslike h3{
+  margin-top: 20px;
+  margin-bottom: 16px;
+  font-size: 26px;
+  font-weight: 500;
+  color: rgb(18, 38, 63);
+
+}
+.activities {
+  width: 60%; /* Giảm kích thước xuống 60% */
+  margin: 0 auto; /* Căn giữa theo chiều ngang */
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.activity-list {
+
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.activity-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 12px 16px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activity-info {
+  display: flex;
+  align-items: center;
+}
+
+.activity-dot {
+  color: #4071f4;
+  margin-right: 8px;
+}
+
+.activity-text {
+  font-size: 14px;
+  color: #333;
+}
+
+.activity-time {
+  font-size: 12px;
+  color: #999;
+}
+
+.see-more {
+  text-align: center;
+  background-color: #e9f1ff;
+  color: #4071f4;
+  padding: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+} 
+.movie-title {
+  margin-top: 10px;
+
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  font-family: "Cerebri Sans, sans-serif";
+}
+
+
+
+/* Responsive cho máy tính bảng (tablet) */
+@media (max-width: 768px) {
+  .main-content {
+    margin-top: 10px;
+  }
+
+  .acounntone {
+   
+    align-items: center;
+    width: 100%;
+    margin-left: 15px;
+    margin-top: -29px;
+  }
+
+  .avatas img {
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+    bottom: 0;
+    margin-bottom: 20px;
+  }
+
+  .nameacount {
+    padding-left: 0;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .nameacount h3 {
+    font-size: 24px;
+  }
+
+  .phimyeuthich-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .item-phim {
+    margin: 10px;
+  }
+
+  .activities {
+    width: 90%;
+    margin-top: 20px;
+  }
+  #placeholder-cover{
+    width: 90%;
+  }
+}
+
+/* Responsive cho điện thoại (mobile) */
+@media (max-width: 480px) {
+  .acounntone {
+    border: none;
+    box-shadow: none;
+    padding: 10px;
+  }
+
+  .avatas img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .nameacount h3 {
+    font-size: 20px;
+  }
+
+  .phimyeuthich {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+
+  .item-phim .img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .activities {
+    padding: 10px;
+  }
+
+  .activity-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .activity-info {
+    margin-bottom: 10px;
+  }
+
+  .see-more {
+    padding: 8px;
+  }
+}

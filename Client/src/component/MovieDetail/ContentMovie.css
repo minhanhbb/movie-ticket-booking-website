@@ -1,0 +1,105 @@
+.city-select{
+  display: block !important;
+}
+.post-meta-span{
+  color: orangered;
+}
+
+@media (max-width: 992px) {
+    .video-section iframe {
+      width:700px;
+      height: 300px;
+    }
+  .schedule-section{
+    width: 700px;
+  }
+  .title-2,.related-posts,.community-section{
+    width: 700px;
+  }
+  
+    .schedule-actions {
+       
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .schedule-actions .city-select, .schedule-actions .button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .newcontent .post {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .newcontent .post-image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .newcontent .post-info {
+      text-align: center;
+    }
+  }
+  
+  /* Reponsive cho thiết bị có màn hình nhỏ hơn 768px (mobile) */
+  @media (min-width: 767px) and (max-width: 1024px)  {
+    .video-section iframe, .schedule-section,.title-2,.related-posts,.community-section{
+        width: 650px;
+        margin-left: 170px;
+    }
+    .container.content-1 {
+      padding: 0 10px;
+    }
+  
+    .video-section iframe {
+      height: 250px;
+    }
+  
+    .related-posts {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .newcontent .post {
+      margin-bottom: 20px;
+    }
+  
+    .comment {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Reponsive cho thiết bị có màn hình nhỏ hơn 480px (điện thoại nhỏ) */
+  @media (max-width: 768px) {
+    .video-section iframe, .schedule-section,.title-2,.related-posts,.community-section{
+        width: 390px;
+       margin-left: 10px;
+    }
+    .video-section iframe {
+      height: 200px;
+    }
+  
+    .schedule-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .schedule-actions .city-select {
+      width: 100%;
+    }
+  
+    .schedule-actions .button {
+      width: 100%;
+    }
+  
+    .newcontent .post {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .newcontent .post-info {
+      text-align: center;
+    }
+  }

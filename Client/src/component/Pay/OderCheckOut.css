@@ -1,0 +1,633 @@
+/* Container chính */
+
+
+/* Container chính */
+.order-checkout-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* Panel trái */
+.left-panel {
+  width: 65%;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid rgb(237, 242, 249);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Tóm tắt đơn hàng */
+.order-summary {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+ 
+}
+.order-summaryt h3{
+  font-size: 16px;               /* Smaller font size as seen in the image */
+  color: #9CA3AF;                /* Light gray color similar to the text color */
+  font-weight: 400;              /* Lighter font weight */
+  margin: 1;                     /* Remove margin */
+  padding: 15px 20px;            /* Add padding for space inside */
+  text-align: left;              /* Align text to the left */
+  background-color: #F3F4F6;     /* Light background color */
+  border-top-left-radius: 8px;   /* Rounded corner on top left */
+  border-top-right-radius: 8px;  /* Rounded corner on top right */
+}
+
+
+
+
+/* Các hàng của mục đơn hàng */
+.item-header, .order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+  color: #34495e;
+}
+.item-header {
+  font-weight: 600;
+  font-size: 16px;
+  color: #2c3e50;
+}
+.item-header  span{
+  padding-left: 10px;
+}
+.item-title {
+  font-weight: 500;
+  color: #7f8c8d;
+  text-align: center;
+  padding-left: 10px;
+}
+.item-title h4{
+   margin-left: 10px;
+}
+.item-quantity, .item-price {
+  font-weight: 600;
+  color: #34495e !important;
+}
+
+/* Combo tóm tắt */
+.combo-summary h4 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  padding-left: 10px;
+}
+.combo-summary h3{
+padding-left: 10px;
+}
+.combo-summary .order-item {
+  color: #5d6d7e;
+  padding-left: 10px;
+}
+.voucher-section {
+  margin-bottom: 20px;
+}
+.voucher-section h4{
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.voucher-input {
+  width: 79%;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+
+.apply-voucher-btn {
+  margin-left: 10px;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.apply-voucher-btn-1 {
+  margin-left: 10px;
+  padding: 8px 16px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+.apply-voucher-btn:hover {
+  background-color: #45a049;
+} 
+.diemgiamgia{
+  cursor: pointer;
+  color: black !important;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+/* Bảng điểm  */
+.khung-diem-poly {
+  width: 100%;
+  max-width: 650px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.khung-diem-poly table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.khung-diem-poly thead {
+  background-color: #45d4e1;
+}
+
+.khung-diem-poly thead th {
+  color: #065275;
+  text-align: left;
+  padding: 15px 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.khung-diem-poly tbody tr {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.khung-diem-poly tbody tr:last-child {
+  border-bottom: none;
+}
+
+.khung-diem-poly tbody td {
+text-align:left;
+  padding: 15px 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+.khung-diem-poly input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.khung-diem-poly button {
+position: absolute;
+  background-color:#45a049;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: -20px;
+ margin-left: 20px;
+}
+
+.khung-diem-poly button:hover {
+  background-color: #d9363e;
+}
+
+
+
+
+/* Tổng giá */
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #e74c3c;
+  border-top: 2px solid #e0e0e0;
+  margin-top: -1px !important;
+}
+.total-title {
+  font-weight: 700;
+  color: #e74c3c;
+}
+.total-title5 {
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #e74c3c ;
+  margin-right: 30px;
+}
+.total-price {
+  margin-right: 30px;
+  font-size: 22px;
+  color: #e74c3c;
+  font-weight: bold;
+}
+.total-titlee{
+  margin-top: 15px;
+  font-weight: 600;
+  color:#e74c3c;
+margin-right: 30px;
+  font-size: 22px;
+}
+
+
+/* Các hình thức thanh toán */
+.payment-methods h3 {
+  font-size: 16px;               /* Smaller font size as seen in the image */
+  color: #9CA3AF;                /* Light gray color similar to the text color */
+  font-weight: 400;              /* Lighter font weight */
+  margin: 20px;                     /* Remove margin */
+  padding: 15px 20px;            /* Add padding for space inside */
+  text-align: left;              /* Align text to the left */
+  background-color: #F3F4F6;     /* Light background color */
+  border-top-left-radius: 8px;   /* Rounded corner on top left */
+  border-top-right-radius: 8px;  /* Rounded corner on top right */
+}
+.payment-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.payment-methods li {
+  margin-left: 23px;
+width: 670px;
+  align-items: center;
+  padding: 14px;
+  margin-bottom: 12px;
+  background-color: #ffffff;
+  color: #2c3e50;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.payment-methods li:hover {
+  background-color: #e6eef5;
+  transform: scale(1.03);
+}
+
+/* Panel phải */
+.right-panel {
+  width: 30%;
+  padding: 25px;
+  background-color: #ffffff;
+  border: 1px solid;
+  margin-bottom: auto;
+  border: 1px solid rgb(237, 242, 249);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Chi tiết thanh toán */
+.checkout-details .order-info, .checkout-details .time-info {
+  margin-bottom: 20px;
+}
+.checkout-details .total-price, .checkout-details .time-remaining {
+  font-size: 26px;
+  color: #2980b9;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+/* Nút xác nhận thanh toán */
+.confirm-button button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(52, 152, 219, 0.4);
+}
+.confirm-button button:hover {
+  background-color: #2980b9;
+  box-shadow: 0px 6px 20px rgba(41, 128, 185, 0.4);
+}
+
+/* Form thông tin cá nhân */
+.form-container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  width: 100%;
+ 
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* Panel trái */
+.left-panel {
+  width: 65%;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid rgb(237, 242, 249);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Tóm tắt đơn hàng */
+.order-summary {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+ 
+}
+.order-summary h3{
+  font-size: 16px;               /* Smaller font size as seen in the image */
+  color: #9CA3AF;                /* Light gray color similar to the text color */
+  font-weight: 400;              /* Lighter font weight */
+  margin: 1;                     /* Remove margin */
+  padding: 15px 20px;            /* Add padding for space inside */
+  text-align: left;              /* Align text to the left */
+  background-color: #F3F4F6;     /* Light background color */
+  border-top-left-radius: 8px;   /* Rounded corner on top left */
+  border-top-right-radius: 8px;  /* Rounded corner on top right */
+}
+
+
+
+
+/* Các hàng của mục đơn hàng */
+.item-header, .order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+  color: #34495e;
+}
+.item-header {
+  font-weight: 600;
+  font-size: 16px;
+  color: #2c3e50;
+}
+.item-title {
+  font-weight: 500;
+  color: #7f8c8d;
+  text-align: center;
+}
+.item-quantity, .item-price {
+  font-weight: 600;
+  color: #34495e;
+}
+
+/* Combo tóm tắt */
+.combo-summary h4 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+.combo-summary .order-item {
+  color: #5d6d7e;
+}
+
+/* Tổng giá */
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #e74c3c;
+  border-top: 2px solid #e0e0e0;
+  margin-top: -1px !important;
+}
+.total-title {
+  color: #333;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.total-price {
+  font-size: 24px;
+  color: #e74c3c;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.total-title2{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+/* Các hình thức thanh toán */
+.payment-methods h3 {
+  font-size: 16px;               /* Smaller font size as seen in the image */
+  color: #9CA3AF;                /* Light gray color similar to the text color */
+  font-weight: 400;              /* Lighter font weight */
+  margin: 20px;                     /* Remove margin */
+  padding: 15px 20px;            /* Add padding for space inside */
+  text-align: left;              /* Align text to the left */
+  background-color: #F3F4F6;     /* Light background color */
+  border-top-left-radius: 8px;   /* Rounded corner on top left */
+  border-top-right-radius: 8px;  /* Rounded corner on top right */
+}
+.payment-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.check-icon {
+  margin-left: 8px; /* Adjust spacing as needed */
+  color: #28a745; /* Green color for the check mark */
+  
+}
+
+.payment-methods li {
+  margin-right: 30px;
+  align-items: center;
+  padding: 14px;
+  margin-bottom: 12px;
+  background-color: #ffffff;
+  color: #2c3e50;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.payment-methods li:hover {
+  background-color: #e6eef5;
+  transform: scale(1.03);
+}
+
+/* Panel phải */
+.right-panel {
+  width: 30%;
+  padding: 25px;
+  background-color: #ffffff;
+  border: 1px solid;
+  margin-bottom: auto;
+  border: 1px solid rgb(237, 242, 249);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Chi tiết thanh toán */
+.checkout-details .order-info, .checkout-details .time-info {
+  margin-bottom: 20px;
+}
+.checkout-details .total-price, .checkout-details .time-remaining {
+  font-size: 26px;
+  color: #2980b9;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+/* Nút xác nhận thanh toán */
+.confirm-button button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(52, 152, 219, 0.4);
+}
+.confirm-button button:hover {
+  background-color: #2980b9;
+  box-shadow: 0px 6px 20px rgba(41, 128, 185, 0.4);
+}
+
+/* Form thông tin cá nhân */
+.form-container {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  width: 100%;
+}
+.form-container h3 {
+  font-size: 16px;               /* Smaller font size as seen in the image */
+  color: #9CA3AF;                /* Light gray color similar to the text color */
+  font-weight: 400;              /* Lighter font weight */
+  margin: 1;                     /* Remove margin */
+  padding: 15px 20px;            /* Add padding for space inside */
+  text-align: left;              /* Align text to the left */
+  background-color: #F3F4F6;     /* Light background color */
+  border-top-left-radius: 8px;   /* Rounded corner on top left */
+  border-top-right-radius: 8px;  /* Rounded corner on top right */
+  font-size: 16px;               /* Smaller font size as seen in the image */
+  color: #9CA3AF;                /* Light gray color similar to the text color */
+  font-weight: 400;              /* Lighter font weight */
+  margin: 1;                     /* Remove margin */
+  padding: 15px 20px;            /* Add padding for space inside */
+  text-align: left;              /* Align text to the left */
+  background-color: #F3F4F6;     /* Light background color */
+  border-top-left-radius: 8px;   /* Rounded corner on top left */
+  border-top-right-radius: 8px;  /* Rounded corner on top right */
+}
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 5px;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 5px;
+  transition: border-color 0.3s ease;
+}
+.form-group label{
+  padding-left: 10px;
+}
+.form-group input:focus {
+  border-color: #2980b9;
+  box-shadow: 0px 0px 5px rgba(41, 128, 185, 0.2);
+}
+.nhom-form.nhom-checkbox {
+  display: inline-flex; /* Sắp xếp theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  margin-left: -90px;
+}
+
+.nhom-form.nhom-checkbox input {
+ 
+  margin-right: -80px; /* Khoảng cách giữa checkbox và nhãn */
+}
+
+.nhom-form.nhom-checkbox label {
+  font-size: 14px; /* Kích thước chữ */
+  line-height: 1; /* Giữ dòng chữ đều nhau */
+}
+
+
+
+/* Custom responsive thiết kế */
+@media (max-width: 768px) {
+  .order-checkout-container {
+      flex-direction: column;
+      padding: 15px;
+  }
+  .left-panel, .right-panel {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .payment-methods li{
+    width: 650px;
+  }
+
+  .total-title3{
+    margin-left: 365px;
+  }
+}
+
+@media (max-width: 480px){
+  .payment-methods li{
+    width: 313px;
+  }
+  .apply-voucher-btn{
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .bang-diem-poly th{
+    font-size: 12px;
+  }
+  .total-title3{
+    font-size: 20px;
+    margin-left: 45px;
+  }
+  .total-titlee{
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .total-price{
+    font-size: 20px;
+  }
+}

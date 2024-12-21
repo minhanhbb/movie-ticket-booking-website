@@ -1,0 +1,46 @@
+/* CSS tùy chỉnh cho modal */
+.custom-modal .ant-modal-content {
+    border-radius: 10px;
+    padding: 24px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+  }
+  
+  /* Văn bản trong modal */
+  .modal-text {
+    font-size: 16px;
+    color: #2d3748; /* Màu tối như mẫu */
+    line-height: 1.6;
+  }
+  
+  /* Chữ in đậm (dưới 16 tuổi) */
+  .modal-text strong {
+    font-weight: bold;
+    color: #d02f2f; /* Màu đỏ */
+  }
+  
+  /* Nút đồng ý */
+  .modal-button {
+    background-color: #383d3f; /* Màu xanh đậm */
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-left: 300px;
+  }
+  
+  .modal-button:hover {
+    background-color: #262729 !important;
+  }
+  
+  /* Khoảng cách giữa nội dung và nút */
+  .custom-modal .ant-modal-footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    border: none;
+  }
+  

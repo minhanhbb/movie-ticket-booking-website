@@ -1,0 +1,371 @@
+.movie-detail-container {
+    width: 100%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Bố cục phần thông tin và hình ảnh */
+.boxbig {
+    background-color: #12243b;
+    width: 100%;
+}
+
+.info-section {
+    display: flex;
+    align-items: center; /* Sửa từ flex-start thành center */
+    gap: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    width: calc(100% - 340px);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.poster {
+    width: 230px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.movie-details-wrapper {
+    display: flex;
+    justify-content: space-between; /* Đảm bảo phần diễn viên, đạo diễn ở bên phải */
+    gap: 20px;
+    color: #fff;
+    width: 100%;
+}
+
+.movie-info {
+    flex: 1;
+}
+
+.title {
+    
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.genre {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #d3d3d3;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 6px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.like {
+    background-color: #e7eaed;
+    color: rgb(41, 38, 38);
+}
+
+.rate {
+    background-color: #e7eaed;
+    color: rgb(41, 38, 38);
+}
+
+.trailer {
+    background-color:#12243b;
+    color: white;
+    border: 1px solid white;
+}
+.trailer :hover{
+    background: white;
+}
+
+.buy-ticket-button {
+    padding: 8px 20px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.movie-details {
+    display: flex;
+    gap: 40px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Thông tin diễn viên, đạo diễn, nhà sản xuất */
+.additional-info {
+    width: 230px; /* Đặt width cho phần này */
+    font-size: 14px;
+    line-height: 1.5;
+    padding-top: 70px;
+
+}
+.additional-info p{
+    color: red;
+}
+/* Tabs */
+.tabs {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    border-bottom: 2px solid #ddd;
+    padding-left: 190px;
+    margin: 30px auto 0;
+}
+
+.tab {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #666;
+    text-decoration: none; /* Bỏ gạch chân cho thẻ a */
+}
+
+.tab.active {
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+}
+
+.tab:hover {
+    color: #3498db;
+}
+
+
+/* Phần chọn video */
+.video-section {
+    margin-top: 20px;
+    width: calc(100% - 340px); /* Giảm chiều rộng */
+    margin: 20px auto; /* Căn giữa */
+   
+}
+.content{
+    background: #edf2f9;
+   float: none;
+   padding-right: 150px;
+}
+.container{
+    display: block;
+  
+ 
+}
+
+
+/* Phần chọn lịch chiếu */
+.schedule-section {
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px; /* Thêm padding để cách lề */
+    gap: 10px;
+    width: 735px; /* Giảm chiều rộng */
+    margin-left: 170px; /* Căn giữa */
+}
+
+/* Điều chỉnh thẻ select */
+.city-select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 600px; /* Đặt chiều rộng của select là 460px */
+}
+.schedule-section h3{
+    font-weight:500;
+    font-size: 21px;
+}
+.schedule-section p{
+    color:#b7ccef ;
+}
+
+.schedule-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.xem-lich-chieu {
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: #0d1f33;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 250px; /* Đặt chiều rộng của button là 210px */
+}
+.xem-lich-chieu:hover{
+    background-color: black;
+}
+
+/* Phần bài viết liên quan */
+.related-posts {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+ margin-top: -7px;
+    margin-left: 170px;
+    width: 735px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   
+}
+
+.title-2 {
+  margin-top: 15px;
+  background-color: #dfe8f3;
+  width: 735px;
+  height: 65px;
+  border-radius:10px;
+  margin-left: 170px;
+  margin-bottom: 0;
+}
+.title-2 h3{
+    padding-left: 30px;
+    font-size: 15px;
+    padding-top: 18px;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.post:last-child {
+    border-bottom: none; /* Bỏ kẻ dưới cho bài viết cuối */
+}
+
+.post-image {
+    width: 250px; /* Thay đổi chiều rộng của ảnh */
+    height: 140px; /* Thay đổi chiều cao của ảnh */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px; /* Tăng khoảng cách giữa ảnh và nội dung */
+}
+
+.post-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #3498db;
+    text-decoration: none;
+}
+
+
+
+.post-meta {
+    font-size: 13px;
+    color: #888;
+}
+.post-meta-2{
+    font-size: 13px;
+    font-weight:500;
+    color:#94abd3  ;
+}
+
+  
+  /* Phần cộng đồng */
+  .congdong{
+    text-align: center;
+  }
+  .community-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 170px;
+    width: 735px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .community-section h3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight:600;
+    color: #2c3e50;
+    padding: 10px; /* Thêm padding để tạo không gian */
+    background-color: #e1f5fe; /* Màu nền cho tiêu đề */
+    border: 1px solid #b0bec5; /* Đường viền xung quanh */
+    border-radius: 5px; /* Bo góc cho đường viền */
+    text-align: center;
+  }
+  
+  .comment {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tạo bóng cho comment */
+    margin-bottom: 15px;
+  }
+  
+  .comment-user {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    
+  }
+ 
+  .comment-rating {
+    font-size: 14px;
+    color: #f5c518; /* Màu vàng cho rating */
+  }
+  
+  .comment-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .comment-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .comment-actions button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .comment-actions button:hover {
+    color: #3498db;
+  }
+  
+  .like-btn:hover,
+  .dislike-btn:hover {
+    opacity: 0.7;
+  }
+  .avatar-icon {
+    font-size: 30px; /* Kích thước của icon */
+    color: #3498db; /* Màu sắc của icon */
+    margin-right: 10px; /* Khoảng cách giữa icon và tên người dùng */
+    vertical-align: middle; /* Canh giữa icon với tên người dùng */
+}
+
+@media (max-width: 768px){
+    .community-section{
+    
+    }
+}

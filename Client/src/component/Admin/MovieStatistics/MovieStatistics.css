@@ -1,0 +1,100 @@
+Styling for the container
+.movie-statistics-container {
+    padding: 32px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  
+  .filter-section .filter-inputs {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .filter-section .filter-buttons {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .filter-section .filter-buttons button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  
+
+  .charts-section {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+    height: 400px;
+  }
+  
+  .chart-container {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+ 
+  .table-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-container th {
+    background-color: #1976d2;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+    padding: 12px;
+  }
+  
+  .table-container td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .table-container tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+ 
+  button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #1565c0;
+    transform: translateY(-2px);
+    color: #ffffff;
+  }
+ 
+  @media (max-width: 768px) {
+    .filter-section {
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    .charts-section {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  

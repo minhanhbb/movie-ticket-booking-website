@@ -1,0 +1,268 @@
+.movie-card-fullscreen {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f7f8;
+  
+}
+
+.movie-card-header {
+  text-align: center;
+  background-image: url('https://cdn.moveek.com/build/images/tix-banner.ed8b6071.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.movie-card-header h2 {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+}
+
+.movie-card-header p {
+  font-size: 16px;
+}
+/* Add custom styles for the skeleton loader */
+.loading-skeleton {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.loading-skeleton .phim-card {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.loading-skeleton .react-loading-skeleton {
+  margin-bottom: 10px;
+}
+
+.movie-card-content {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-left: 200px;
+  width: 800px; /* Giới hạn chiều rộng */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+margin-bottom: 30px;
+}
+
+.movie-card-poster img {
+  width: 200px; /* Điều chỉnh lại kích thước poster */
+  border-radius: 8px;
+}
+
+.movie-card-info {
+  padding-left: 20px;
+  flex-grow: 1;
+}
+
+.movie-card-info h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.movie-genre {
+  font-size: 14px;
+  color: #63c6e1;
+}
+
+.movie-description {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.movie-details1 {
+  background-color: #f0f4f8; /* Nền màu nhẹ */
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.movie-info1 {
+  display: flex; /* Đảm bảo các thành phần nằm trên cùng một dòng */
+  justify-content: center;
+  gap: 10px; /* Khoảng cách giữa các thông tin */
+  color: #4a4a4a;
+  margin-bottom: 8px; /*; Khoảng cách với phần movie-dates */
+}
+
+.movie-dates1 {
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 8px; /* Khoảng cách giữa movie-info và movie-dates */
+}
+
+.movie-info .duration1,
+.movie-info .rating1 {
+ 
+padding: 10px ;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+
+.movie-info .rating1 {
+  color: #4a4a4a; /* Màu xanh lá cho icon người */
+}
+
+.movie-info i {
+  margin-right: 4px; /* Khoảng cách giữa icon và text */
+}
+
+
+
+.movie-actions {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+.movie-actions a{
+  text-decoration: none;
+  
+}
+
+.btn-info,
+.btn-trailer,
+.btn-buy {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  width: 150px;
+}
+
+.btn-info {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.btn-trailer {
+  background-color: #d0e8f2;
+  color: #007bff;
+}
+
+.btn-buy {
+  background-color: #ff4d4f;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+.no-movies-message{
+  margin: 30px;
+  width: 300px;
+  height: 50px;
+  margin-left: 600px;
+  display: inline-block; /* Cho phép áp dụng padding và margin */
+  color: #fff; /* Màu chữ trắng */
+  background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Hiệu ứng màu gradient */
+  padding: 10px 20px; /* Khoảng cách bên trong */
+  font-size: 16px; /* Cỡ chữ */
+  font-weight: bold; /* Đậm chữ */
+  text-align: center; /* Căn giữa text */
+  border-radius: 25px; /* Bo tròn góc */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+  transition: transform 0.2s, box-shadow 0.2s; /* Hiệu ứng khi hover */
+  cursor: pointer; /* Thay đổi con trỏ chuột */
+  margin-bottom: 60px;
+}
+
+/* Responsive cho iPad */
+@media (max-width: 768px) {
+  .movie-card-content {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .movie-card-poster img {
+    width: 30%;
+    max-width: 300px;
+    margin: 0 auto;
+  margin-left: 220px;
+  }
+.movie-description{
+  text-align: left;
+}
+  .movie-card-info {
+    padding-left: 0;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .movie-card-header h2 {
+    font-size: 22px;
+  }
+
+  .movie-card-header p {
+    font-size: 14px;
+  }
+    .movie-actions {
+     gap: 100px
+  }
+ .btn-info,
+  .btn-trailer,
+  .btn-buy {
+    width: 150px;
+  }
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 480px) {
+  .movie-card-header h2 {
+    font-size: 20px;
+  }
+.movie-actions{
+  gap:18px
+}
+  .movie-card-header p {
+    font-size: 14px;
+  }
+
+  .movie-card-content {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .movie-card-poster img {
+    width: 50%;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-left: 80px;
+  }
+
+  .movie-card-info h3 {
+    font-size: 18px;
+  }
+
+  .movie-genre,
+  .movie-description {
+    font-size: 13px;
+  }
+
+  .movie-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-info,
+  .btn-trailer,
+  .btn-buy {
+    width: 100%;
+
+  }
+}

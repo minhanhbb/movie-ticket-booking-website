@@ -1,0 +1,115 @@
+/* Tổng quan */
+body {
+  background-color: #f0f2f5;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Container chính */
+.ant-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ant-card .ant-image {
+  border-radius: 10px;
+}
+
+/* Tiêu đề chính */
+.ant-typography-title {
+  color: #001529 !important;
+  font-weight: bold;
+}
+
+/* Nút */
+.ant-btn {
+  border-radius: 8px;
+}
+
+.ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.ant-btn-primary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.ant-btn-default {
+  background-color: #f0f2f5;
+  border-color: #d9d9d9;
+}
+
+.ant-btn-default:hover {
+  background-color: #e6f7ff;
+  border-color: #91d5ff;
+}
+
+/* DatePicker */
+.ant-picker {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Chi tiết đơn hàng */
+.order-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-info .ant-typography {
+  font-size: 16px;
+}
+
+.order-info .ant-typography-title {
+  font-size: 18px;
+  color: #333;
+}
+
+/* QR Code và nút Download */
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ant-card {
+    padding: 10px;
+  }
+
+  .order-info {
+    text-align: left;
+  }
+
+  .qr-code img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 580px) {
+  .ant-card {
+    margin: 10px;
+  }
+
+  .order-info {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .order-info .ant-typography-title {
+    font-size: 16px;
+  }
+
+  .ant-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .qr-code img {
+    width: 80px;
+  }
+}
